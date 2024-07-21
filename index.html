@@ -26,74 +26,208 @@
 
     <header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-white-custom fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white-custom fixed-top">
+            <div class="container">
+                <!--navbar-brand: Estilo para el logo o nombre del sitio, con tamaño y énfasis destacados.-->
+                <a href="#" class="navbar-brand">
+                    <!-- Logo de la tienda, se oculta en pantallas pequeñas y se muestra en pantallas grandes -->
+                    <img src="Images/Logo TecnyShop.png" alt="Logo TecnyShop"
+                        class="logo-img  d-none d-lg-inline-block">
+                    <span class="text-orange">Grupo</span>
+                    <span class="text-custom-gris">Unfried</span>
+                </a>
 
-        <div class="container">
+                <!--
+                navbar-toggler: Clase de Bootstrap que aplica el estilo al botón que aparece en pantallas pequeñas para controlar la visibilidad del menú.
+                data-bs-toggle="collapse": Indica que este botón está destinado a expandir o colapsar un elemento del menú.
+                data-bs-target="#navbarS": Especifica el elemento que se expandirá o colapsará cuando se haga clic en el botón. El valor "#navbarS" debe coincidir con el `id` del elemento objetivo.
+                aria-controls="navbarS": Proporciona información accesible sobre qué elemento está controlando el botón. Debe coincidir con el `id` del elemento objetivo.
+                aria-expanded="false": Indica el estado actual del elemento objetivo; "false" significa que el elemento está colapsado (oculto).
+                aria-label="Toggle navigation": Proporciona una descripción accesible del propósito del botón para las personas que usan tecnologías asistivas, como lectores de pantalla. En este caso, describe que el botón se usa para alternar la navegación.
+                -->
 
-            <!--navbar-brand: Estilo para el logo o nombre del sitio, con tamaño y énfasis destacados.-->
-            <a href="#" class="navbar-brand">
-                <!-- Logo de la tienda, se oculta en pantallas pequeñas y se muestra en pantallas grandes -->
-                <img src="Images/Logo TecnyShop.png" alt="Logo TecnyShop" class="logo-img  d-none d-lg-inline-block">
-                <span class="text-orange">Grupo</span>
-                <span class="text-custom-gris">Anfriend</span>
-            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                    aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
 
-            <!--
-            navbar-toggler: Clase de Bootstrap que aplica el estilo al botón que aparece en pantallas pequeñas para controlar la visibilidad del menú.
-            data-bs-toggle="collapse": Indica que este botón está destinado a expandir o colapsar un elemento del menú.
-            data-bs-target="#navbarS": Especifica el elemento que se expandirá o colapsará cuando se haga clic en el botón. El valor "#navbarS" debe coincidir con el `id` del elemento objetivo.
-            aria-controls="navbarS": Proporciona información accesible sobre qué elemento está controlando el botón. Debe coincidir con el `id` del elemento objetivo.
-            aria-expanded="false": Indica el estado actual del elemento objetivo; "false" significa que el elemento está colapsado (oculto).
-            aria-label="Toggle navigation": Proporciona una descripción accesible del propósito del botón para las personas que usan tecnologías asistivas, como lectores de pantalla. En este caso, describe que el botón se usa para alternar la navegación.
-            -->
+                    <!--navbar-toggler-icon: Clase que aplica un icono estándar (generalmente tres barras horizontales) para el botón de colapso del menú.-->
+                    <span class="navbar-toggler-icon">
+                        <!-- SVG icono -->
+                        <svg width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path
+                                d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 12.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1z" />
+                        </svg>
+                    </span>
+                </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
-                aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
-
-                <!--navbar-toggler-icon: Clase que aplica un icono estándar (generalmente tres barras horizontales) para el botón de colapso del menú.-->
-                <span class="navbar-toggler-icon">
-                    <!-- SVG icono -->
-                    <svg width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path
-                            d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 12.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1z" />
-                    </svg>
-                </span>
-            </button>
-
-            <!--
+                <!--
                 collapse: Oculta el contenido en pantallas pequeñas. Se muestra cuando se activa.
                 navbar-collapse: Indica que el contenido dentro del div es parte de una barra de navegación y debe ser colapsable.
                 navbar-nav: Aplica estilos a una lista de elementos de navegación.
                 ms-auto: Alinea los elementos de la lista hacia la derecha aplicando margen izquierdo automático.
                 mb-2: Aplica un margen inferior pequeño para tamaños de pantalla más pequeños.
                 mb-lg-0: Elimina el margen inferior en pantallas grandes.
-            -->
+                -->
 
-            <div class="collapse navbar-collapse" id="navbarS">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarS">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-                    <!--
-                    nav-item: Estiliza los ítems individuales dentro de la lista de navegación.
-                    nav-link: Estiliza los enlaces dentro de la barra de navegación.
-                    -->
+                        <!--
+                        nav-item: Estiliza los ítems individuales dentro de la lista de navegación.
+                        nav-link: Estiliza los enlaces dentro de la barra de navegación.
+                        -->
 
-                    <li class="nav-item"> <a href="#about" class="nav-link itemPag"> Inicio </a> </li>
-                    <li class="nav-item"> <a href="#diferenciales" class="nav-link itemPag"> Blog </a> </li>
-                    <li class="nav-item"> <a href="#servicios" class="nav-link itemPag"> Contacto </a> </li>
-                    <li class="nav-item"> <a href="#informacionAdicional" class="nav-link itemPag"> Productos </a> </li>
-                    <li class="nav-item"> <a href="#MejoresProductos" class="nav-link itemPag"> Nosotros </a> </li>
-                </ul>
+                        <li class="nav-item"> <a href="#about" class="nav-link itemPag"> Inicio </a> </li>
+                        <li class="nav-item"> <a href="#diferenciales" class="nav-link itemPag"> Blog </a> </li>
+                        <li class="nav-item"> <a href="#servicios" class="nav-link itemPag"> Contacto </a> </li>
+                        <li class="nav-item"> <a href="#informacionAdicional" class="nav-link itemPag"> Productos </a>
+                        </li>
+                        <li class="nav-item"> <a href="#MejoresProductos" class="nav-link itemPag"> Nosotros </a> </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselE" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" aria-current="true"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselE" data-bs-slide-to="2" aria-current="true"
+                        aria-label="Slide 3"></button>
+                </div>
+
             </div>
 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Images/Carousel/BannerProductos.png" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5>Los mejores Electrodomesticos</h5>
+                        <p>
+                            Te proporcionamos un extenso catálogo de productos que incluye una amplia variedad de
+                            dispositivos
+                            inteligentes de la marca Xiaomi, así como sistemas completos de aires acondicionados.
+                            Estamos comprometidos en ofrecerte soluciones tecnológicas avanzadas que transformen tu
+                            espacio.
+                        </p>
+                        <a href="#" class="btn btn-orange mt-3"> Preguntas frecuentes</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="./Images/Carousel/CarouselImagen2.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5>Los mejores Servicios</h5>
+                        <p>
+                            Nos especializamos en ofrecer servicios tecnológicos avanzados que transformarán tu espacio.
+                            Desde la instalación de sistemas completos de climatización hasta soluciones personalizadas
+                            para la gestión de dispositivos inteligentes, nuestro objetivo es brindarte un servicio de
+                            excelencia que responda a todas tus necesidades.
+                        </p>
+
+                        <a href="#" class="btn btn-orange mt-3"> Preguntas frecuentes</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="./Images/Carousel/CarouselImagen3.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5>Las mejores ofertas</h5>
+                        <p>
+                            Aprovecha nuestras ofertas exclusivas en servicios tecnológicos diseñados para mejorar tu
+                            entorno. Desde la instalación de sistemas de climatización hasta soluciones avanzadas para
+                            la gestión de dispositivos inteligentes, ofrecemos descuentos especiales y promociones para
+                            que obtengas el mejor valor en nuestros servicios de alta calidad.
+                        </p>
+                        <a href="#" class="btn btn-orange mt-3"> Preguntas frecuentes</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
         </div>
-        
-    </nav>
 
 
     </header>
-    
-    
-    
+
+    <!--
+    <main>
+        <section class="informacion" id="informacionAdicional">
+            <div class="container-fluid">
+                Primera sección: Misión --comentario
+                <div class="row my-md-3 ps-md-3">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="bg-body-tertiary text-center overflow-hidden w-100">
+                            <div class="informacion-txt my-3 p-3">
+                                <span>TecnyShop</span>
+                                <h3>Misión</h3>
+                                <hr>
+                                <p>
+                                    Nuestro objetivo es convertir tu hogar o negocio en un espacio de vanguardia,
+                                    utilizando
+                                    tecnología innovadora para mejorar tu calidad de vida y asegurar tu confort en todo
+                                    momento.
+                                    Imagina vivir o trabajar en un lugar donde cada aspecto de tu entorno está
+                                    optimizado para tu
+                                    bienestar, desde la iluminación y la temperatura hasta la seguridad y el
+                                    entretenimiento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <div class="bg-body-tertiary overflow-hidden w-100 h-100">
+                            <img src="Images/CasaInteligente.jfif" alt="Imagen de casa tecnlogica"
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+
+                Segunda sección: Visión --comentario
+                <div class="row my-md-3 ps-md-3">
+                    <div class="col-md-6 order-md-2 d-flex align-items-center">
+                        <div class="bg-body-tertiary text-center overflow-hidden w-100">
+                            <div class="informacion-txt my-3 p-3">
+                                <span>TecnyShop</span>
+                                <h3>Visión</h3>
+                                <hr>
+                                <div class="Objetivos">
+                                    <ul class="list-unstyled">
+                                        <li> - Integrar tecnología innovadora.</li>
+                                        <li> - Crear ambientes confortables y eficientes.</li>
+                                        <li> - Mejorar tu calidad de vida con soluciones inteligentes.</li>
+                                        <li> - Personalizar productos y servicios según tus necesidades.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1 p-0">
+                        <div class="bg-body-tertiary overflow-hidden w-100 h-100">
+                            <img src="Images/CasaTecnologica.jpg" alt="Imagen de accesorios de la tienda"
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+-->
+
     <footer class="text-dark pt-5 pb-4">
 
         <div class="container text-center text-md-start">
@@ -101,7 +235,7 @@
             <div class="row text-center text-md-start">
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    
+
                     <h5 class="text-uppercase ,b-4 font-weight-bold text-white">Nosotros</h5>
                     <hr class="mb-4">
                     <p>
@@ -116,7 +250,7 @@
                 </div>
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    
+
                     <h5 class="text-uppercase ,b-4 font-weight-bold text-white">Contacto</h5>
                     <hr class="mb-4">
                     <p>
@@ -131,7 +265,7 @@
                 </div>
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    
+
                     <h5 class="text-uppercase ,b-4 font-weight-bold text-white">Blog</h5>
                     <hr class="mb-4">
                     <p>
@@ -146,7 +280,7 @@
                 </div>
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    
+
                     <h5 class="text-uppercase ,b-4 font-weight-bold text-white">Redes sociales</h5>
                     <hr class="mb-4">
                     <ul class="list-unstyled list-inline">
@@ -170,7 +304,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
 
 </body>
 

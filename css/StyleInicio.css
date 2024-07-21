@@ -17,7 +17,7 @@
 
 /* Clase para texto naranja */
 .text-orange {
-    color: rgb(237, 143, 35); /* Cambia el color del texto a naranja */
+    color: #E96C12; /* Cambia el color del texto a naranja */
     font-weight: bold; /* Aplica negrita al texto */
 }
 
@@ -70,8 +70,31 @@
     width: 100%; /* Expande el ancho de la línea al pasar el ratón */
 }
 
+/*----------Estilo del carousel----------*/
 
-/*Footer*/
+.carousel-inner img {
+    height: 84vh; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.carousel-caption {
+    bottom: 20%; /* Ajusta este valor para mover el contenido hacia arriba o hacia abajo */
+}
+
+.btn-orange {
+    background-color: #E96C12; /* Un tono más oscuro para el hover */
+    border-color: #E96C12;
+    color: white;
+    text-transform: capitalize;
+}
+
+.btn-orange:hover {
+    transition: all 250ms ease;
+    font-weight: bold;
+}
+
+/*----------Estilo de Footer----------*/
+
 footer{
     background-color: #536B83;
     margin-top: 10%;
