@@ -1,5 +1,10 @@
-/*Navbar --Navegacion de la pagina web--*/
 
+/* Fuente principal */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Navbar --Navegacion de la pagina web--*/
 
 /* Aplicar sombra a la barra de navegación */
 .navbar {
