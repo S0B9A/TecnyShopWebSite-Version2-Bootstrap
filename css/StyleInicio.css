@@ -44,7 +44,6 @@
     .carousel-caption h5 {
         font-size: 1.1rem;
     }
-
 }
 
 /*----------Estilo del navbar dentro de la pagina----------*/
@@ -350,14 +349,13 @@ hr {
     }
 
     .producto-1 {
-        width: 70%;
         margin-top: 5%;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
         height: 90%;
     }
 
     .producto-txt p {
-        font-size: 10px;
+        font-size: 5px;
     }
 
 }
@@ -371,10 +369,20 @@ hr {
     font-weight: bold;
 }
 
+.grafico-valores{
+    width: 30%;
+}
+
 /* Estilos para pantallas pequeñas */
 @media (max-width: 767.98px) {
     .titulo-grafico {
         font-size: 1.3rem;
         margin-bottom: 5%;
     }
+
+    .grafico-valores{
+        width: 270px;
+    }
+
+    
 }
