@@ -33,17 +33,19 @@
 @media (max-width: 767.98px) {
 
     .carousel-caption {
-        bottom: 14%;
+        bottom: 20%;
         /* Ajusta este valor para mover el contenido hacia arriba o hacia abajo */
     }
 
     .carousel-caption p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .carousel-caption h5 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+        color: #E96C12;
     }
+
 }
 
 /*----------Estilo del navbar dentro de la pagina----------*/
@@ -51,7 +53,7 @@
 /* Estilos para pantallas pequeñas */
 @media (max-width: 767.98px) {
     .itemPag {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -86,7 +88,6 @@ hr {
     /* Ajusta el valor según sea necesario */
 }
 
-
 .about-img img {
     width: 90%;
     border-radius: 15px;
@@ -105,7 +106,7 @@ hr {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 60%;
         margin-top: 20px;
         /* Ajusta según sea necesario */
         margin-bottom: 40px;
@@ -116,12 +117,16 @@ hr {
         text-align: center;
     }
 
+    .about-text span {
+        font-size: 0.7rem;
+    }
+
     .about-text h2 {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
 
     .about-text p {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
 
     .btn-orange {
@@ -172,9 +177,27 @@ hr {
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 767.98px) {
+
+    .diferenciales span {
+        font-size: 0.7rem;
+    }
+
     .titulo-diferencial {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
         margin-bottom: 8%;
+    }
+
+    .diferencial-1 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .diferencial-1 h4 {
+        font-size: 0.8rem;
+    }
+
+    .diferencial-1 p {
+        font-size: 0.7rem;
     }
 }
 
@@ -213,8 +236,20 @@ hr {
 /* Estilos para pantallas pequeñas */
 @media (max-width: 767.98px) {
     .titulo-servicios {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
         margin-bottom: 5%;
+    }
+
+    .card-body span {
+        font-size: 0.9rem;
+    }
+
+    .card-title {
+        font-size: 1.0rem;
+    }
+
+    .card-body p {
+        font-size: 0.8rem;
     }
 }
 
@@ -225,6 +260,7 @@ hr {
 }
 
 .informacion-txt {
+    text-align: justify;
     padding: 20px 0 0 30px;
 }
 
@@ -265,8 +301,35 @@ hr {
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 767.98px) {
+
+    .informacion {
+        padding-bottom: 21px;
+    }
+
+    .informacion-txt {
+        padding-top: 30px;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .informacion-txt span {
+        font-size: 0.9rem;
+    }
+
+    .informacion-txt h3 {
+        font-size: 1.0rem;
+    }
+
     .texto-informacion {
-        margin-bottom: 6%;
+        width: 94%;
+        margin-bottom: 13%;
+        font-size: 0.7rem;
+    }
+
+    .lista {
+        font-size: 0.7rem;
+        list-style: disc;
     }
 }
 
@@ -275,8 +338,8 @@ hr {
 
 /* Estilo para la sección de productos */
 .productos {
-    margin-top: 7%;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 1%;
 }
 
 .productos span {
@@ -294,11 +357,33 @@ hr {
 }
 
 .producto-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: 85%;
+    width: 80%;
     margin-top: 10%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    height: auto;
+    height: 80%;
+    padding: 1px;
+    /* Para asegurar un buen espaciado interno */
+    border-radius: 2%;
+}
+
+.producto-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra horizontalmente el contenido del texto */
+    justify-content: center;
+    /* Centra verticalmente el contenido del texto */
+    width: 100%;
+}
+
+.producto-txt p {
+    width: 100%;
+    text-align: center;
+    /* Para centrar el texto dentro del párrafo */
 }
 
 .producto-1 img {
@@ -343,24 +428,48 @@ hr {
         margin-top: 20%;
     }
 
+    .productos span {
+        font-size: 0.9rem;
+    }
+
     .titulo-productos {
-        font-size: 1.3rem;
+        font-size: 1.0rem;
         margin-bottom: 5%;
     }
 
     .producto-1 {
-        margin-top: 5%;
+        margin-top: 2px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-        height: 90%;
+        width: 80%;
+        padding: 2px;
     }
 
+    .producto-1 img {
+        width: 100%;
+        object-fit: cover;
+        height: 40%;
+    }
+    
+    .producto-txt span {
+        font-size: 0.8rem;
+     }
+
+     
+    .producto-txt h3 {
+        font-size: 0.8rem;
+     }
+
     .producto-txt p {
-        font-size: 5px;
+       font-size: 0.7rem;
     }
 
 }
 
 /*----------Estilo de la section grafico----------*/
+.grafica-inicio {
+    background: linear-gradient(to bottom, #E3E3E3, #FFFFFF);
+    padding-top: 4%;
+}
 
 .grafica-inicio span {
     font-size: 14px;
@@ -369,20 +478,24 @@ hr {
     font-weight: bold;
 }
 
-.grafico-valores{
-    width: 30%;
+.grafico-valores {
+    width: 20%;
 }
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 767.98px) {
+
+    .grafica-inicio span {
+        padding-top: 30px;
+        font-size: 0.9rem;
+    }
+
     .titulo-grafico {
-        font-size: 1.3rem;
+        font-size: 1.0rem;
         margin-bottom: 5%;
     }
 
-    .grafico-valores{
+    .grafico-valores {
         width: 270px;
     }
-
-    
 }
