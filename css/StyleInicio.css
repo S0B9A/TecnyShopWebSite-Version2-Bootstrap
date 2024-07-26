@@ -1,34 +1,56 @@
-
 /*----------Estilo del carousel----------*/
 
 .carousel-inner img {
-    height: 84vh; /* Ajusta la altura según tus necesidades */
-    object-fit: cover; /* Mantiene la proporción de la imagen */
+    height: 84vh;
+    /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+    /* Mantiene la proporción de la imagen */
 }
 
 .carousel-caption {
-    bottom: 23%; /* Ajusta este valor para mover el contenido hacia arriba o hacia abajo */
+    bottom: 23%;
+    /* Ajusta este valor para mover el contenido hacia arriba o hacia abajo */
 }
 
 .btn-orange {
-    background-color: #E96C12; /* Un tono más oscuro para el hover */
+    background-color: #E96C12;
+    /* Un tono más oscuro para el hover */
     border-color: #E96C12;
     color: white;
     text-transform: capitalize;
 }
 
 .btn-orange:hover {
-    background-color: #E96C12; /* Un tono más oscuro para el hover */
+    background-color: #E96C12;
+    /* Un tono más oscuro para el hover */
     border-color: #E96C12;
     transition: all 250ms ease;
     font-weight: bold;
     color: white;
 }
 
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767.98px) {
+
+    .carousel-caption {
+        bottom: 14%;
+        /* Ajusta este valor para mover el contenido hacia arriba o hacia abajo */
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+
+}
+
 /*----------Estilo de la section about----------*/
 
 .about {
-    margin-top:  6%;
+    margin-top: 6%;
     margin-bottom: 8%;
 }
 
@@ -37,7 +59,7 @@
     text-transform: uppercase;
     color: #E96C12;
     font-weight: bold;
-    
+
 }
 
 h2 {
@@ -53,7 +75,8 @@ hr {
 }
 
 .imagen-bajada {
-    margin-top: 16%; /* Ajusta el valor según sea necesario */
+    margin-top: 16%;
+    /* Ajusta el valor según sea necesario */
 }
 
 
@@ -76,23 +99,24 @@ hr {
         margin-left: auto;
         margin-right: auto;
         width: 80%;
-        margin-top: 20px; /* Ajusta según sea necesario */
+        margin-top: 20px;
+        /* Ajusta según sea necesario */
         margin-bottom: 40px;
-        
+
     }
-    
+
     .about-text {
         text-align: center;
     }
-    
+
     .about-text h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
-    
+
     .about-text p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
-    
+
     .btn-orange {
         margin: 20px auto;
     }
@@ -100,7 +124,7 @@ hr {
 
 /*----------Estilo de la section diferenciales----------*/
 
-.diferenciales{
+.diferenciales {
     background-color: #e3e3e3;
 }
 
@@ -111,7 +135,7 @@ hr {
     font-weight: bold;
 }
 
-.titulo-diferencial{
+.titulo-diferencial {
     margin-bottom: 3%;
 }
 
@@ -138,7 +162,3 @@ hr {
     border: 4px solid #E96C12;
     background-color: white;
 }
-
-
-
-
