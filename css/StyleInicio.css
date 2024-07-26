@@ -47,6 +47,15 @@
 
 }
 
+/*----------Estilo del navbar dentro de la pagina----------*/
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .itemPag {
+        font-size: 0.9rem;
+    }
+}
+
 /*----------Estilo de la section about----------*/
 
 .about {
@@ -59,7 +68,6 @@
     text-transform: uppercase;
     color: #E96C12;
     font-weight: bold;
-
 }
 
 h2 {
@@ -161,4 +169,12 @@ hr {
     border-radius: 50%;
     border: 4px solid #E96C12;
     background-color: white;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .titulo-diferencial {
+        font-size: 1.3rem;
+        margin-bottom: 8%;
+    }
 }
