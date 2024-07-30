@@ -1,0 +1,98 @@
+/*Header*/
+.header {
+    padding-top: 120px;
+}
+
+.banner {
+    background: url('../Images/BannerProductos.png');
+    width: 100%;
+    height: 300px;
+    padding: 9%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.banner hr {
+    border: 1px solid #E96C12;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+/*Section de autores*/
+
+.autores {
+    padding: 100px 0; /* Reducido el padding superior e inferior */
+    text-align: center;
+    background-color: white;
+    width: 100%;
+}
+
+.autores span{
+    font-size: 16px;
+    font-weight: 800;
+    color: #E96C12
+}
+
+.autores hr{
+    margin: 0 auto; /* Centrar horizontalmente el hr */
+    width: 50%; /* Ajustar el ancho del hr */
+    border: none; /* Asegurar que no haya borde */
+    border-top: 1px solid #E96C12; /* Estilo de la línea */
+}
+
+.autores-content .autor-1 {
+    margin: 30px;
+    background-color: #f1f0f0;
+    border: 1px solid #536B83;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.autores-content img {
+    margin-bottom: 10px; /* Margen inferior de la imagen reducido */
+    width: 100%; /* Ancho de la imagen ajustado para ocupar todo el espacio disponible */
+    height: auto;
+}
+
+.autor-txt {
+    padding: 15px; /* Padding del texto reducido */
+}
+
+.autor-txt span {
+    color: #536B83;
+    font-size: 15px;
+}
+
+.autor-txt h3 {
+    color: #E96C12;
+    font-size: 16px; /* Tamaño del título reducido */
+    margin: 10px 0; /* Margen del título ajustado */
+}
+
+.autor-txt p {
+    font-size: 12px;
+}
+
+.autores-content .autor-1:hover {
+    transition: all 300ms ease;
+    transform: translateY(-3%);
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .banner h1 {
+        margin-top: 16%;
+    
+    }
+}
