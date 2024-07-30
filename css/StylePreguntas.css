@@ -20,6 +20,11 @@ header {
 
     .titulo-mapa {
         font-size: 1.5rem;
-        margin-bottom: 5%;
+        margin-bottom: 8%;
+    }
+
+    .ubicacion-mapa{
+        width: 80%;
+        height: 250px;
     }
 }
