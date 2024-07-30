@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecny Shop Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/StyleIndex.css">
+    <link rel="stylesheet" href="./css/StyleInicio.css">
+    <link rel="stylesheet" href="./css/StylePreguntas.css">
+</head>
+
+
+
+<!-- Navegacion de la pagina Web -->
+
+<!--
+    navbar: Aplica estilos básicos para una barra de navegación utilizando Bootstrap.
+    navbar-expand-lg: Expande la barra de navegación en pantallas grandes (lg) y superiores. En pantallas más pequeñas, se colapsará.
+    navbar-light: Aplica estilos de color claro para el texto y los elementos de la barra de navegación.
+    bg-white-custom: Establece el color de fondo de la barra de navegación como blanco desde el css.
+    fixed-top: Hace que la barra de navegación permanezca fija en la parte superior de la página cuando se desplaza.
+  -->
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white-custom fixed-top">
+            <div class="container">
+                <!--navbar-brand: Estilo para el logo o nombre del sitio, con tamaño y énfasis destacados.-->
+                <a href="#" class="navbar-brand">
+                    <!-- Logo de la tienda, se oculta en pantallas pequeñas y se muestra en pantallas grandes -->
+                    <img src="Images/Logo TecnyShop.png" alt="Logo TecnyShop"
+                        class="logo-img  d-none d-lg-inline-block">
+                    <span class="text-orange">Grupo</span>
+                    <span class="text-custom-gris">Unfried</span>
+                </a>
+
+                <!--
+                navbar-toggler: Clase de Bootstrap que aplica el estilo al botón que aparece en pantallas pequeñas para controlar la visibilidad del menú.
+                data-bs-toggle="collapse": Indica que este botón está destinado a expandir o colapsar un elemento del menú.
+                data-bs-target="#navbarS": Especifica el elemento que se expandirá o colapsará cuando se haga clic en el botón. El valor "#navbarS" debe coincidir con el `id` del elemento objetivo.
+                aria-controls="navbarS": Proporciona información accesible sobre qué elemento está controlando el botón. Debe coincidir con el `id` del elemento objetivo.
+                aria-expanded="false": Indica el estado actual del elemento objetivo; "false" significa que el elemento está colapsado (oculto).
+                aria-label="Toggle navigation": Proporciona una descripción accesible del propósito del botón para las personas que usan tecnologías asistivas, como lectores de pantalla. En este caso, describe que el botón se usa para alternar la navegación.
+                -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                    aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <!--navbar-toggler-icon: Clase que aplica un icono estándar (generalmente tres barras horizontales) para el botón de colapso del menú.-->
+                    <span class="navbar-toggler-icon">
+                        <!-- SVG icono -->
+                        <svg width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path
+                                d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 12.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1z" />
+                        </svg>
+                    </span>
+                </button>
+
+                <!--
+                collapse: Oculta el contenido en pantallas pequeñas. Se muestra cuando se activa.
+                navbar-collapse: Indica que el contenido dentro del div es parte de una barra de navegación y debe ser colapsable.
+                navbar-nav: Aplica estilos a una lista de elementos de navegación.
+                ms-auto: Alinea los elementos de la lista hacia la derecha aplicando margen izquierdo automático.
+                mb-2: Aplica un margen inferior pequeño para tamaños de pantalla más pequeños.
+                mb-lg-0: Elimina el margen inferior en pantallas grandes.
+                -->
+
+                <div class="collapse navbar-collapse" id="navbarS">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <!--
+                        nav-item: Estiliza los ítems individuales dentro de la lista de navegación.
+                        nav-link: Estiliza los enlaces dentro de la barra de navegación.
+                        -->
+
+                        <li class="nav-item"> <a href="index.html" class="nav-link itemPag"> Inicio </a> </li>
+                        <li class="nav-item"> <a href="PreguntasFrecuentes.html" class="nav-link itemPag"> Preguntas
+                                frecuentes </a> </li>
+                        <li class="nav-item"> <a href="" class="nav-link itemPag"> Contacto </a> </li>
+                        <li class="nav-item"> <a href="productos.html" class="nav-link itemPag"> Productos </a></li>
+                        <li class="nav-item"> <a href="" class="nav-link itemPag"> Acerca de </a> </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselE" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" aria-current="true"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselE" data-bs-slide-to="2" aria-current="true"
+                        aria-label="Slide 3"></button>
+                </div>
+
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Images/Carousel/BannerProductos.png" class="d-block w-100"
+                        alt="Imagen de Electrodomesticos">
+                    <div class="carousel-caption">
+                        <h5>Los mejores Electrodomesticos</h5>
+                        <p>
+                            Te proporcionamos un extenso catálogo de productos que incluye una amplia variedad de
+                            dispositivos inteligentes de la marca Xiaomi, así como sistemas completos de aires
+                            acondicionados.
+                            Estamos comprometidos en ofrecerte soluciones tecnológicas avanzadas que transformen tu
+                            espacio.
+                        </p>
+                        <a href="#" class="btn btn-orange mt-3"> Nuestro contacto</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="./Images/Carousel/CarouselImagen2.jpg" class="d-block w-100"
+                        alt="Imagen de Electrodomesticos">
+                    <div class="carousel-caption">
+                        <h5>Los mejores Servicios</h5>
+                        <p>
+                            Nos especializamos en ofrecer servicios tecnológicos avanzados que transformarán tu
+                            espacio.
+                            Desde la instalación de sistemas completos de climatización hasta soluciones
+                            personalizadas
+                            para la gestión de dispositivos inteligentes, nuestro objetivo es brindarte un servicio
+                            de
+                            excelencia que responda a todas tus necesidades.
+                        </p>
+
+                        <a href="#" class="btn btn-orange mt-3">Nuestro contacto</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="./Images/Carousel/CarouselImagen3.jpg" class="d-block w-100"
+                        alt="Imagen de Electrodomesticos">
+                    <div class="carousel-caption">
+                        <h5>Las mejores ofertas</h5>
+                        <p>
+                            Aprovecha nuestras ofertas exclusivas en servicios tecnológicos diseñados para mejorar
+                            tu
+                            entorno. Desde la instalación de sistemas de climatización hasta soluciones avanzadas
+                            para
+                            la gestión de dispositivos inteligentes, ofrecemos descuentos especiales y promociones
+                            para
+                            que obtengas el mejor valor en nuestros servicios de alta calidad.
+                        </p>
+                        <a href="#" class="btn btn-orange mt-3"> Nuestro contacto</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="preguntas text-center">
+            <div id="preguntas" class="container">
+                <h2 class="titulo-preguntas">Preguntas frecuentes</h2>
+                <div class="accordion mx-auto" id="accordionExample" style="max-width: 900px;">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                                style="background-color: chocolate; color: white;">
+                                ¿Qué servicios ofrece TecnyShop?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                En TecnyShop ofrecemos servicios de reparación y mantenimiento de aires acondicionados,
+                                venta de equipos de alta eficiencia, y expertos en instalación tanto previa como durante
+                                el uso de nuestros productos.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                style="background-color: chocolate; color: white;">
+                                ¿Qué diferencia a TecnyShop de otras empresas tecnológicas?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Nos destacamos por nuestro servicio al cliente excepcional, ofreciendo soporte técnico
+                                especializado y una amplia gama de productos innovadores que garantizan una experiencia
+                                de usuario fluida.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                style="background-color: chocolate; color: white;">
+                                ¿Cuáles son los productos destacados de TecnyShop?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Entre nuestros mejores productos se encuentran el Monitor MI 2K Gaming de 27", la MI
+                                Smart Air Fryer de 3.5L, y el MI Robot Vacuum-Mop Essential, diseñados para ofrecer
+                                tecnología avanzada en oficina, cocina y limpieza respectivamente.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                                style="background-color: chocolate; color: white;">
+                                ¿Qué misión tiene TecnyShop?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Nuestra misión es utilizar tecnología innovadora para convertir hogares y negocios en
+                                espacios de vanguardia que mejoren la calidad de vida de nuestros clientes.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                                style="background-color: chocolate; color: white;">
+                                ¿Cuál es la visión de TecnyShop para el futuro?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Nuestra visión incluye integrar soluciones inteligentes y personalizadas que optimicen
+                                el confort y la eficiencia en todos los aspectos de la vida diaria.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                                style="background-color: chocolate; color: white;">
+                                ¿Ofrecen instalación de los productos que venden?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Sí, ofrecemos servicios profesionales de instalación tanto para nuestros productos de
+                                aire acondicionado como para dispositivos inteligentes, asegurando su correcto
+                                funcionamiento desde el primer día.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"
+                                style="background-color: chocolate; color: white;">
+                                ¿Cómo pueden los dispositivos inteligentes mejorar la eficiencia energética en mi hogar
+                                o negocio?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Nuestros dispositivos inteligentes están diseñados para optimizar el consumo de energía
+                                mediante funciones como la programación automática y el monitoreo remoto, ayudando así a
+                                reducir costos y mejorar la sostenibilidad.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
+                                style="background-color: chocolate; color: white;">
+                                ¿Qué tipo de soporte técnico ofrecen después de la instalación?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Proporcionamos soporte técnico continuo a través de múltiples canales para asegurar que
+                                nuestros clientes disfruten de una experiencia sin complicaciones con nuestros
+                                productos.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"
+                                style="background-color: chocolate; color: white;">
+                                ¿Cómo puedo empezar a incorporar tecnología inteligente en mi hogar o negocio?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Puedes comenzar explorando nuestro catálogo de productos en línea o visitando nuestra
+                                tienda física, donde nuestros expertos pueden asesorarte sobre las mejores soluciones
+                                para tus necesidades específicas.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen"
+                                style="background-color:chocolate ; color: white;">
+                                ¿Cuál es el enfoque principal de TecnyShop al transformar espacios con tecnología
+                                inteligente?
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Nos enfocamos en mejorar el confort y la eficiencia de nuestros clientes mediante la
+                                integración de dispositivos inteligentes que facilitan el control y la automatización de
+                                sus entornos, proporcionando así una experiencia moderna y personalizada.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Mapa" class="mapa">
+            <div class="mapa-container container text-center">
+                <h2 class="titulo-mapa" style="color: #E96C12;">Nuestro mapa</h2>
+                <div class="d-flex justify-content-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62875.71000956343!2d-84.3613110443256!3d9.956251827484747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0568c3310e32f%3A0x3b6820d7f4499dd3!2sProvincia%20de%20Alajuela%2C%20Turr%C3%BAcares!5e0!3m2!1ses!2scr!4v1719117600602!5m2!1ses!2scr"
+                        width="600" height="450" style="border: 2px solid #E96C12;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-dark pt-5 pb-4">
+
+        <div class="container text-center text-md-start">
+
+            <div class="row text-center text-md-start">
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+
+                    <h5 class="text-uppercase ,b-4 font-weight-bold text-white">Nosotros</h5>
+                    <hr class="mb-4">
+                    <p>
+                        <a href="index.html#about" class="text-white">Nuestra información</a>
+                    </p>
+                    <p>
+                        <a href="index.html#diferenciales" class="text-white">Nuestros diferenciales</a>
+                    </p>
+                    <p>
+                        <a href="index.html#servicios" class="text-white">Nuestros servicios</a>
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+
+                    <h5 class="text-uppercase ,b-4 font-weight-bold text-white">Contacto</h5>
+                    <hr class="mb-4">
+                    <p>
+                        <a href="contacto.html#Contáctenos" class="text-white">Contáctenos</a>
+                    </p>
+                    <p>
+                        <a href="contacto.html#preguntas" class="text-white">Preguntas frecuentes</a>
+                    </p>
+                    <p>
+                        <a href="index.html#Mapa" class="text-white">Mapa</a>
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+
+                    <h5 class="text-uppercase ,b-4 font-weight-bold text-white">Blog</h5>
+                    <hr class="mb-4">
+                    <p>
+                        <a href="blog.html#pr-blog" class="text-white">Productos más vendidos</a>
+                    </p>
+                    <p>
+                        <a href="blog.html#ar-blog" class="text-white">Articulos recomendados</a>
+                    </p>
+                    <p>
+                        <a href="blog.html#arInt-blog" class="text-white">Más articulos interesantes</a>
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+
+                    <h5 class="text-uppercase ,b-4 font-weight-bold text-white">Redes sociales</h5>
+                    <hr class="mb-4">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
