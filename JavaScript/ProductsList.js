@@ -1,27 +1,31 @@
-function displayBooks(data) {  
+function detalleProducto(){
+    window.location.href = `detalleProducto.html`;
+}
+
+function listProducts(data) {  
     $("#products-list").html('')
-    data.forEach(book => {
-        const cardBook=`
+    data.forEach(product => {
+        const cardProduct=`
         <div class="col-md-3">
             <div class="card">
-                <img class="card-image-top p-3" src="${book.Galeria[0] || './Images/Productos/image-not-found.jpg'}" alt="${book.Nombre}">
+                <img class="card-image-top p-3" src="${product.Galeria[0] || './Images/Productos/image-not-found.jpg'}" alt="${product.Nombre}">
                 <div class="card-body p-1 mb-4">
-                    <h2 class="card-title text-center">${book.Nombre}</h2>
+                    <h4 class="card-title text-center">${product.Nombre}</h4>
                     <hr>
-                    <p class="card-text text-center">${book.Descripcion}</p>
-                    <h4 class="text-center">${book.Precio}</h4>
+                    <p class="card-text text-center">${product.Descripcion}</p>
+                    <h4 class="text-center">${product.Precio}</h4>
                     <div class="btn">
-                        <button type="button">Comprar</button>
+                        <button type="button" onclick="detalleProducto()">Comprar</button>
                     </div>
                 </div>
             </div>
         </div>`;
-    $("#products-list").append(cardBook)
+    $("#products-list").append(cardProduct)
     });
    
   }
   
   $(document).ready(function () {
-    //Listar Libros
-    displayBooks(products)
+    //Listar productos
+    listProducts(products)
   });
