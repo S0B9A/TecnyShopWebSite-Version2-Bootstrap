@@ -1,0 +1,58 @@
+
+.contacto h2 {
+    font-size: 36px;
+    color: #E96C12;
+    margin-bottom: 7%;
+    margin-top: 20%;
+}
+.contacto-info{
+    margin-bottom: 10%;
+}
+.contacto h3 {
+    color: #E96C12;
+}
+
+.contacto p {
+    color: #000;
+}
+.button{
+    width: 25%;
+    background-color: #E96C12;
+    border: 2px solid #E96C12;
+    border: none;
+    transition: all 300ms ease;
+    height: 50px;
+}
+.button:hover{
+    background-color: #fff;
+    border: 2px solid #E96C12;
+    color: #000;
+}
+.form-control:focus,
+.form-select:focus {
+    border-color: #E96C12;
+    box-shadow: 0 0 5px rgba(233, 108, 18, 0.5);
+}
+.form-check-input:checked {
+    background-color: #E96C12;
+    border-color: #E96C12;
+}
+.contact-item i{
+    min-width: 60px;
+    height: 60px;
+    color: #fff;
+    background: rgba(102, 102, 102, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: all 300ms ease;
+}
+.icon:hover{
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+
