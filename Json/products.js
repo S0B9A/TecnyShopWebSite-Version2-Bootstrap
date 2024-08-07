@@ -95,4 +95,34 @@ const products=
         "Descripcion":"Edición T12",
         "Garantia":"1 anno"
     },
+    {
+        "ID":10,
+        "Nombre": "Aspiradora en seco y húmedo",
+        "Categoria":"Limpieza",
+        "Precio":90000,
+        "Galeria":["./Images/Productos/Limpieza/Aspiradora en seco y humedo W10-Photoroom.png","./Images/Productos/image-not-found.jpg"],
+        "Stock":false,
+        "Descripcion":"Edición W10",
+        "Garantia":"1 anno"
+    },
+    {
+        "ID":11,
+        "Nombre": "Proyector Láser",
+        "Categoria":"Oficina",
+        "Precio":112000,
+        "Galeria":["./Images/Productos/Oficina/Proyector laser 150 -TV.png","./Images/Productos/image-not-found.jpg"],
+        "Stock":true,
+        "Descripcion":"Edición 150 -TV",
+        "Garantia":"1 anno"
+    },
+    {
+        "ID":12,
+        "Nombre": "Ratón Dual Mode",
+        "Categoria":"Oficina",
+        "Precio":37000,
+        "Galeria":["./Images/Productos/Oficina/Raton Dual Mode edicion silenciosa.png","./Images/Productos/image-not-found.jpg"],
+        "Stock":true,
+        "Descripcion":"Edición Silenciosa",
+        "Garantia":"1 anno"
+    },
 ]

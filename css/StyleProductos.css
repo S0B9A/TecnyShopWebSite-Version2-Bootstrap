@@ -1,8 +1,16 @@
 
 header{
-    margin-bottom: 8%;
+    margin-bottom: 150px;
 }
-
+.container-fluid{
+    padding: 0 10%;
+}
+#filter{
+    width: 30%;
+}
+.form-select:focus{
+    border-color: #E96C12;
+}
 .btn{
     width: 100%;
 }
