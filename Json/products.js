@@ -96,14 +96,3 @@ const products=
         "Garantia":"1 anno"
     },
 ]
-
-/*
-Falta:
-
-o Tiempos de entrega y gastos de envío.
-o Opciones de entrega: Envío postal y recogida en tienda
-o Enlace a información de cambios y devoluciones.
-o Enlace a contacto y buzón o sección de ayuda.
-o Reseña de usuarios: Valoración mediante texto o símbolos (escala de estrellas)
-
-*/

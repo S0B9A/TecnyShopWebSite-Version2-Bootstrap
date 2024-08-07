@@ -1,0 +1,23 @@
+header{
+    margin-bottom: 10%;
+}
+#productQuantity{
+    width: 40%;
+    height: 50px;
+    border-color: #E96C12;
+}
+#addToCart {
+    height: 50px;
+    border: 2px solid #E96C12;
+    background-color: #E96C12;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+#addToCart:hover{
+    border: 2px solid #E96C12;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 5px;
+}
