@@ -1,11 +1,13 @@
-header{
+header {
     margin-bottom: 10%;
 }
-#productQuantity{
+
+#productQuantity {
     width: 40%;
     height: 50px;
     border-color: #E96C12;
 }
+
 #addToCart {
     height: 50px;
     border: 2px solid #E96C12;
@@ -15,9 +17,21 @@ header{
     transition: all 200ms ease;
     cursor: pointer;
 }
-#addToCart:hover{
+
+#addToCart:hover {
     border: 2px solid #E96C12;
     background-color: #fff;
     color: #000000;
     border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.alert-custom {
+    background-color: #E96C12;
+    /* Color naranja bonito */
+    color: white;
+    /* Color del texto blanco para contraste */
 }
