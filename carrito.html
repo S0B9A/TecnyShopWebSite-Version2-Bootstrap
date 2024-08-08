@@ -70,78 +70,83 @@
 
     <main>
 
-        <div class="tab-pane carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-            <br class="linea-superior">
-            <table class="table table-hover table-light">
-                <thead>
-                    <tr class="text-primary fondo">
-                        <th scope="col" class="col-tabla">#</th>
-                        <th scope="col" class="col-tabla">Productos</th>
-                        <th scope="col" class="col">Precio</th>
-                        <th scope="col" class="col">SubTotal</th>
-                        <th scope="col" class="col">Cantidad</th>
-                    </tr>
-                </thead>
-                <tbody class="tbody">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td class="table__productos">
-                            <img src="./Images/Productos/Electrodomésticos/FreidoraAire-6L-Photoroom.png" alt="Freidora de aire" class="img-fluid">
-                            <h6 class="title col-producto">Freidora de aire</h6>
-                        </td>
-                        <td class="table__price col-producto">
-                            <p>$ 150.000</p>
-                        </td>
-                        <td class="table__subtotal col-producto">
-                            <p>$ 150.000</p>
-                        </td>
-                        <td class="table__cantidad">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <input type="number" min="1" value="1" class="input__elemento form-control custom-input">
-                                <button class="delete btn btn-danger ms-2">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
+        <div class="container carrito-productos">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Subtotal</th>
+                            <th scope="col">Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr>
+                            <th scope="row" data-label="#">1</th>
+                            <td class="table__productos" data-label="Producto">
+                                <img src="./Images/Productos/Electrodomésticos/FreidoraAire-6L-Photoroom.png"
+                                    alt="Freidora de aire" class="img-fluid">
+                            </td>
+                            <td class="table__price col-producto" data-label="Precio">
+                                <p>Freidora de aire</p>
+                            </td>
+                            <td class="table__price col-producto" data-label="Precio">
+                                <p>$ 150.000</p>
+                            </td>
+                            <td class="table__subtotal col-producto" data-label="Subtotal">
+                                <p>$ 150.000</p>
+                            </td>
+                            <td class="table__cantidad" data-label="Cantidad">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <input type="number" min="1" value="1"
+                                        class="input__elemento form-control custom-input">
+                                    <button class="delete btn btn-danger ms-2 eliminar">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-label="#">2</th>
+                            <td class="table__productos" data-label="Producto">
+                                <img src="./Images/Productos/Electrodomésticos/Horno Microondas Xiaomi-Photoroom.png"
+                                    alt="Horno Microondas Xiaomi" class="img-fluid">
+                            </td>
+                            <td class="table__price col-producto" data-label="Precio">
+                                <p>Freidora de aire</p>
+                            </td>
+                            <td class="table__price col-producto" data-label="Precio">
+                                <p>$ 70.000</p>
+                            </td>
+                            <td class="table__subtotal col-producto" data-label="Subtotal">
+                                <p>$ 70.000</p>
+                            </td>
+                            <td class="table__cantidad" data-label="Cantidad">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <input type="number" min="1" value="1"
+                                        class="input__elemento form-control custom-input">
+                                    <button class="delete btn btn-danger ms-2 eliminar">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                    <tr>
-                        <th scope="row">2</th>
-                        <td class="table__productos">
-                            <img src="./Images/Productos/Electrodomésticos/Horno Microondas Xiaomi-Photoroom.png" alt="Freidora de aire" class="img-fluid">
-                            <h6 class="title col-producto">Horno Microondas Xiaomi</h6>
-                        </td>
-                        <td class="table__price col-producto">
-                            <p>$ 70.000</p>
-                        </td>
-                        <td class="table__subtotal col-producto">
-                            <p>$ 70.000</p>
-                        </td>
-                        <td class="table__cantidad">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <input type="number" min="1" value="1" class="input__elemento form-control custom-input">
-                                <button class="delete btn btn-danger ms-2">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-            <br><br>
-
-            <div class="row mx-4">
+            <div class="row mx-4 mt-3">
                 <div class="col">
-                    <h3 class="itemCartTotal">Total: $10.00</h3>
+                    <h3 class="itemCartTotal">Total: $220.000</h3>
                 </div>
                 <div class="col d-flex justify-content-end">
                     <button class="btn btn-success">COMPRAR</button>
                 </div>
             </div>
         </div>
-        
 
     </main>
 
