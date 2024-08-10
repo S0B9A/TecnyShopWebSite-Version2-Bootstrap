@@ -10,7 +10,6 @@ body {
 .navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ajusta los valores según tus necesidades */
 }
-
 /* Definir una nueva clase para fondo blanco */
 .bg-white-custom {
     background-color: rgb(241, 240, 240); /* Cambia el fondo a blanco */

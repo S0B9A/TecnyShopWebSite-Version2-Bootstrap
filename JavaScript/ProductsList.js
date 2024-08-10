@@ -15,7 +15,7 @@ function listProducts(products) {
                     <p class="card-text text-center">${product.Descripcion}</p>
                     <h4 class="text-center">₡${product.Precio}</h4>
                     <div class="btn">
-                        <button type="button" onclick="detalleProducto(${product.ID})">Comprar</button>
+                        <button type="button" class="btn btn-primary w-100" onclick="detalleProducto(${product.ID})">Comprar</button>
                     </div>
                 </div>
             </div>

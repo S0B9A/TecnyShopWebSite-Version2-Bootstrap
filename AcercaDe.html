@@ -23,39 +23,41 @@
             <div class="container">
 
                 <a href="#" class="navbar-brand">
-
                     <img src="Images/Logo TecnyShop.png" alt="Logo TecnyShop"
-                        class="logo-img  d-none d-lg-inline-block">
+                        class="logo-img d-none d-lg-inline-block">
                     <span class="text-orange">Grupo</span>
                     <span class="text-custom-gris">Unfried</span>
-
                 </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
-                    aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
-
-                    <span class="navbar-toggler-icon">
-
-                        <svg width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                            <path
-                                d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 12.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1z" />
-                        </svg>
-
-                    </span>
-
-                </button>
+                
+                <div class="d-flex d-lg-none align-items-center ms-auto">
+                    <a href="carrito.html" class="nav-link me-2">
+                        <i class="fas fa-shopping-cart fa-lg text-orange"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                        aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <svg width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 12.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1z" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
 
                 <div class="collapse navbar-collapse" id="navbarS">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item"> <a href="index.html" class="nav-link itemPag"> Inicio </a> </li>
                         <li class="nav-item"> <a href="PreguntasFrecuentes.html" class="nav-link itemPag"> Preguntas </a> </li>
                         <li class="nav-item"> <a href="contacto.html" class="nav-link itemPag"> Contacto </a> </li>
                         <li class="nav-item"> <a href="productos.html" class="nav-link itemPag"> Productos </a></li>
                         <li class="nav-item"> <a href="AcercaDe.html" class="nav-link itemPag"> Acerca</a> </li>
-                        <li class="nav-item"> <a href="carrito.html" class="nav-link itemPag"> Carrito</a> </li>
-
                     </ul>
+                </div>
+
+                <div class="d-none d-lg-flex align-items-center ms-3">
+                    <a href="carrito.html" class="nav-link">
+                        <i class="fas fa-shopping-cart fa-lg text-orange"></i>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -66,7 +68,6 @@
         </div>
 
     </header>
-
     <main>
     <section class="autores py-5">
         <div class="container text-center">

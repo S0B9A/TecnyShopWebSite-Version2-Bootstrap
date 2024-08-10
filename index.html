@@ -32,58 +32,44 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-white-custom fixed-top">
             <div class="container">
-                <!--navbar-brand: Estilo para el logo o nombre del sitio, con tamaño y énfasis destacados.-->
+
                 <a href="#" class="navbar-brand">
-                    <!-- Logo de la tienda, se oculta en pantallas pequeñas y se muestra en pantallas grandes -->
                     <img src="Images/Logo TecnyShop.png" alt="Logo TecnyShop"
-                        class="logo-img  d-none d-lg-inline-block">
+                        class="logo-img d-none d-lg-inline-block">
                     <span class="text-orange">Grupo</span>
                     <span class="text-custom-gris">Unfried</span>
                 </a>
-
-                <!--
-                navbar-toggler: Clase de Bootstrap que aplica el estilo al botón que aparece en pantallas pequeñas para controlar la visibilidad del menú.
-                data-bs-toggle="collapse": Indica que este botón está destinado a expandir o colapsar un elemento del menú.
-                data-bs-target="#navbarS": Especifica el elemento que se expandirá o colapsará cuando se haga clic en el botón. El valor "#navbarS" debe coincidir con el `id` del elemento objetivo.
-                aria-controls="navbarS": Proporciona información accesible sobre qué elemento está controlando el botón. Debe coincidir con el `id` del elemento objetivo.
-                aria-expanded="false": Indica el estado actual del elemento objetivo; "false" significa que el elemento está colapsado (oculto).
-                aria-label="Toggle navigation": Proporciona una descripción accesible del propósito del botón para las personas que usan tecnologías asistivas, como lectores de pantalla. En este caso, describe que el botón se usa para alternar la navegación.
-                -->
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
-                    aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
-
-                    <!--navbar-toggler-icon: Clase que aplica un icono estándar (generalmente tres barras horizontales) para el botón de colapso del menú.-->
-                    <span class="navbar-toggler-icon">
-                        <!-- SVG icono -->
-                        <svg width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                            <path
-                                d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 12.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1z" />
-                        </svg>
-                    </span>
-                </button>
-
-                <!--
-                collapse: Oculta el contenido en pantallas pequeñas. Se muestra cuando se activa.
-                navbar-collapse: Indica que el contenido dentro del div es parte de una barra de navegación y debe ser colapsable.
-                navbar-nav: Aplica estilos a una lista de elementos de navegación.
-                ms-auto: Alinea los elementos de la lista hacia la derecha aplicando margen izquierdo automático.
-                mb-2: Aplica un margen inferior pequeño para tamaños de pantalla más pequeños.
-                mb-lg-0: Elimina el margen inferior en pantallas grandes.
-                -->
+                
+                <div class="d-flex d-lg-none align-items-center ms-auto">
+                    <a href="carrito.html" class="nav-link me-2">
+                        <i class="fas fa-shopping-cart fa-lg text-orange"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                        aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <svg width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1zM1 12.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H1a.5.5 0 0 1-.5-.5v-1z" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
 
                 <div class="collapse navbar-collapse" id="navbarS">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item"> <a href="index.html" class="nav-link itemPag"> Inicio </a> </li>
                         <li class="nav-item"> <a href="PreguntasFrecuentes.html" class="nav-link itemPag"> Preguntas </a> </li>
                         <li class="nav-item"> <a href="contacto.html" class="nav-link itemPag"> Contacto </a> </li>
                         <li class="nav-item"> <a href="productos.html" class="nav-link itemPag"> Productos </a></li>
                         <li class="nav-item"> <a href="AcercaDe.html" class="nav-link itemPag"> Acerca</a> </li>
-                        <li class="nav-item"> <a href="carrito.html" class="nav-link itemPag"> Carrito</a> </li>
                     </ul>
                 </div>
 
+                <div class="d-none d-lg-flex align-items-center ms-3">
+                    <a href="carrito.html" class="nav-link">
+                        <i class="fas fa-shopping-cart fa-lg text-orange"></i>
+                    </a>
+                </div>
             </div>
         </nav>
 

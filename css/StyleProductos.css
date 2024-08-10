@@ -3,7 +3,7 @@ header{
     margin-bottom: 150px;
 }
 .container-fluid{
-    padding: 0 10%;
+    padding: 0 7%;
 }
 #filter{
     width: 30%;
@@ -16,17 +16,16 @@ header{
 }
 .btn button{
     height: 40px;
-    width: 150px;
+    width: 70%;
     border: 2px solid #E96C12;
     background-color: #E96C12;
     color: #fff;
     border-radius: 5px;
     transition: all 200ms ease;
     cursor: pointer;
+    white-space: nowrap
 }
 .btn button:hover{
-    height: 40px;
-    width: 150px;
     border: 2px solid #E96C12;
     background-color: #fff;
     color: #000000;
