@@ -30,7 +30,7 @@ function monstrarProductosDelCarrito() {
                                 <div class="d-flex align-items-center justify-content-between">
                                     <input type="number" min="1" value="${producto.cantidadDelProducto}"
                                         class="input__elemento form-control custom-input">
-                                    <button class="delete btn btn-danger ms-2" data-id="${index}">
+                                    <button class="eliminar delete btn btn-danger ms-2" data-id="${index}">
                                         <i class="bi bi-trash"></i>
                                     </button>
                                 </div>
