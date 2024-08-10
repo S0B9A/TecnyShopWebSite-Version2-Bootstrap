@@ -36,7 +36,6 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-white-custom fixed-top">
             <div class="container">
-
                 <a href="#" class="navbar-brand">
                     <img src="Images/Logo TecnyShop.png" alt="Logo TecnyShop"
                         class="logo-img d-none d-lg-inline-block">
@@ -45,9 +44,14 @@
                 </a>
                 
                 <div class="d-flex d-lg-none align-items-center ms-auto">
-                    <a href="carrito.html" class="nav-link me-2">
+                    <a href="carrito.html" class="nav-link me-2 position-relative">
                         <i class="fas fa-shopping-cart fa-lg text-orange"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill border border-dark bg-white text-dark d-none">
+                            0
+                            <span class="visually-hidden">Cantidad</span>
+                        </span>
                     </a>
+                    
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
                         aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
@@ -58,7 +62,7 @@
                         </span>
                     </button>
                 </div>
-
+    
                 <div class="collapse navbar-collapse" id="navbarS">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item"> <a href="index.html" class="nav-link itemPag"> Inicio </a> </li>
@@ -68,11 +72,15 @@
                         <li class="nav-item"> <a href="AcercaDe.html" class="nav-link itemPag"> Acerca</a> </li>
                     </ul>
                 </div>
-
+    
                 <div class="d-none d-lg-flex align-items-center ms-3">
-                    <a href="carrito.html" class="nav-link">
+                    <a href="carrito.html" class="nav-link me-2 position-relative">
                         <i class="fas fa-shopping-cart fa-lg text-orange"></i>
-                    </a>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill border border-dark bg-white text-dark d-none">
+                            0
+                            <span class="visually-hidden">Cantidad</span>
+                        </span>
+                    </a>                    
                 </div>
             </div>
         </nav>
@@ -427,7 +435,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
+    <script src="./Json/products.js"></script>
+    <script src="./JavaScript/ProductsList.js"></script>
+    <script src="./JavaScript/LocalStorageCarrito.js"></script>
 </body>
 
 </html>

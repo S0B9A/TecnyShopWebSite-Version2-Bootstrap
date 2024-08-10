@@ -7,7 +7,6 @@ function GuardarProducto() {
     if (productoBuscado) {
         console.table(productoBuscado);
 
-        // Asigna los valores a variables separadas
         const precio = parseInt(productoBuscado.Precio);
         const nombre = productoBuscado.Nombre;
         const primeraImagen = productoBuscado.Galeria[0];
@@ -24,8 +23,25 @@ function GuardarProducto() {
         };
 
         VerificacionDeProductos(producto);
+
+        ActualizarCantidadCarrito()
     }
 };
+
+function ActualizarCantidadCarrito() {
+    let productosAlmacenados = JSON.parse(localStorage.getItem("productos")) || [];
+    const cantidadTotal = productosAlmacenados.reduce((total, producto) => total + producto.cantidadDelProducto, 0);
+
+    const $badge = $('.badge');
+    
+    if (cantidadTotal > 0) {
+        $badge.text(cantidadTotal);
+        $badge.removeClass('d-none'); 
+    } else {
+        $badge.addClass('d-none'); 
+    }
+}
+$(document).ready(ActualizarCantidadCarrito);
 
 function AlmacenarEnLocalStorage(producto) {
     let productosAlmacenados = JSON.parse(localStorage.getItem("productos")) || [];

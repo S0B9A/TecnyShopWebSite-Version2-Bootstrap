@@ -1,20 +1,18 @@
-
 $(document).ready(function () {
     monstrarProductosDelCarrito();
-
 });
 
 function monstrarProductosDelCarrito() {
     $("#productos-list").html('');
     let productosAlmacenados = JSON.parse(localStorage.getItem("productos")) || [];
 
-    productosAlmacenados.forEach(producto => {
+    productosAlmacenados.forEach((producto, index) => {
 
         const colProducto = document.createElement("tr");
         colProducto.classList.add("item-Producto");
 
         const productoItem =
-            `<th scope="row" data-label="#">1</th>
+            `<th scope="row" data-label="#">${index + 1}</th>
                             <td class="table__productos" data-label="Producto">
                                 <img src="${producto.primeraImagen}"
                                     alt="" class="img-fluid">
@@ -32,7 +30,7 @@ function monstrarProductosDelCarrito() {
                                 <div class="d-flex align-items-center justify-content-between">
                                     <input type="number" min="1" value="${producto.cantidadDelProducto}"
                                         class="input__elemento form-control custom-input">
-                                    <button class="delete btn btn-danger ms-2 eliminar">
+                                    <button class="delete btn btn-danger ms-2" data-id="${index}">
                                         <i class="bi bi-trash"></i>
                                     </button>
                                 </div>
@@ -41,4 +39,21 @@ function monstrarProductosDelCarrito() {
         colProducto.innerHTML = productoItem;
         $("#productos-list").append(colProducto); 
     });
+
+    $(".delete").on("click", function() {
+        const id = $(this).data("id");
+        eliminarProductoDelCarrito(id);
+    });
+}
+
+function eliminarProductoDelCarrito(id) {
+    let productosAlmacenados = JSON.parse(localStorage.getItem("productos")) || [];
+    
+    productosAlmacenados.splice(id, 1);
+    
+    localStorage.setItem("productos", JSON.stringify(productosAlmacenados));
+    
+    monstrarProductosDelCarrito();
+    
+    ActualizarCantidadCarrito();
 }
