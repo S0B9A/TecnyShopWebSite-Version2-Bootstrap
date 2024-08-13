@@ -55,4 +55,22 @@
     cursor: pointer;
 }
 
+.hide {
+    display: none;
+}
+
+.alert-custom {
+    background-color: #E96C12;
+    /* Color naranja bonito */
+    color: white;
+    /* Color del texto blanco para contraste */
+}
+
+@media (max-width: 767.98px) {
+   .alert-custom {
+    width: 80%;
+    margin-top: 100px;
+   }
+}
+
 
