@@ -4,9 +4,11 @@ function detalleProducto(ID) {
 
 function listProducts(products) {  
     $("#products-list").html('')
+    var delayAnimacion = 50
     products.forEach(product => {
+        delayAnimacion += 100
         const cardProduct=`
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="fade-down" data-aos-delay="${delayAnimacion}">
             <div class="card">
                 <img class="card-image-top p-3" src="${product.Galeria[0] || './Images/Productos/image-not-found.jpg'}" alt="${product.Nombre}">
                 <div class="card-body p-1 mb-4">
