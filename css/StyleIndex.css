@@ -18,7 +18,9 @@ body {
 .logo-img {
     width: 13%;
 }
-
+i{
+    cursor: pointer;
+}
 /* Clase para texto naranja */
 .text-orange {
     color: #E96C12; /* Cambia el color del texto a naranja */
@@ -114,4 +116,16 @@ footer .list-inline .list-inline-item a:hover {
 }
 .d-none {
     display: none;
+}
+
+/*----------Barra lateral carrito----------*/
+
+.carbtn{
+    border: 2px solid #E96C12;
+    background-color: #E96C12;
+    color: #fff;
+}
+.carbtn:hover{
+    background-color: #d55a02;
+    border: 2px solid #d55a02;
 }

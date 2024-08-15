@@ -1,3 +1,4 @@
+
 function GuardarProducto() {
     const parametrosURL = new URLSearchParams(window.location.search);
     const productoID = parametrosURL.get("ID");
