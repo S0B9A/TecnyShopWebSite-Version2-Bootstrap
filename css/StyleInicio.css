@@ -31,7 +31,7 @@
 
 .animate__animated.animate__slideInDown {
     --animate-duration: 1s;
-  }
+}
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 767.98px) {
@@ -337,137 +337,88 @@ hr {
     }
 }
 
-/* Estilo para la sección de productos */
+
+/*----------Estilo de la section productos version2----------*/
+
 .productos {
-    margin-top: 5%;
+    margin-top: 6%;
     margin-bottom: 1%;
 }
 
-.productos span {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #E96C12;
-    font-weight: bold;
-}
-
-.productos hr {
-    border: none;
-    border-top: 1px solid #E96C12;
-    width: 50%;
-    margin: 0 auto;
-}
-
-.producto-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin-top: 10%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    height: 80%;
-    padding: 1px;
-    /* Para asegurar un buen espaciado interno */
-    border-radius: 2%;
-}
-
-.producto-txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Centra horizontalmente el contenido del texto */
-    justify-content: center;
-    /* Centra verticalmente el contenido del texto */
-    width: 100%;
-}
-
-.producto-txt p {
-    width: 100%;
+.intro-text {
+    margin-bottom: 40px;
     text-align: center;
-    /* Para centrar el texto dentro del párrafo */
 }
 
-.producto-1 img {
-    width: 100%;
-    object-fit: cover;
-    height: 50%;
-}
-
-.producto-txt {
-    margin-top: 2%;
-    flex-grow: 1;
-}
-
-.producto-txt span {
+.intro-text h1 {
     color: #536B83;
-    font-size: 15px;
+    margin-top: 6px;
 }
 
-.producto-txt h3 {
-    color: #E96C12;
-    font-size: 16px;
-    margin: 10px 0;
+.intro-text p {
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+#menuProductos .nav-pills .nav-link {
+    background-color: #FFFFFF;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #536B83;
+    border-radius: 100px;
     font-weight: bold;
+    border: 0.2px solid rgb(97, 92, 92);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.producto-txt p {
-    width: 80%;
-    font-size: 12px;
+#menuProductos .nav-pills .nav-link.active {
+    background-color: #E96C12;
+    color: white;
+    border: 0.2px solid #E96C12;
 }
 
-/* Transición y efectos hover */
-.producto-1:hover {
-    transition: all 300ms ease;
-    transform: translateY(-3%);
-    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, 0.3);
+.card-product{
+    margin-bottom: 6%;
 }
 
-/* Estilos para pantallas pequeñas */
+.menu-item{
+    width: 95%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 2%;
+    transition: all 400ms ease;
+    min-height: 400px;
+}
+
+h5{
+    font-weight: bold;
+    color: #E96C12;
+    font-size: 14px;
+}
+
+.parrafo-producto{
+    font-size: 14px;
+}
+
+.imagenProducto{
+    width: 90%;
+    object-fit: cover;
+}
+
+.card-product :hover :not(.menu-item){
+    transition: all 400ms ease;
+    transform: scale(.96);
+}
+
 @media (max-width: 767.98px) {
-
-
-    .productos {
-        margin-top: 20%;
-    }
-
-    .productos span {
-        font-size: 0.9rem;
-    }
-
-    .titulo-productos {
-        font-size: 1.0rem;
-        margin-bottom: 5%;
-    }
-
-    .producto-1 {
-        margin-top: 2px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-        width: 80%;
-        padding: 2px;
-    }
-
-    .producto-1 img {
-        width: 100%;
-        object-fit: cover;
-    }
-    
-    .producto-txt span {
-        font-size: 0.8rem;
-     }
-
-     
-    .producto-txt h3 {
-        font-size: 0.8rem;
-     }
-
-    .producto-txt p {
-       font-size: 0.7rem;
-       width: 70%;
+    .card-product{
+        width: 76%;
+        margin-top: 4%;
+        margin-bottom: 8%;
+        min-height: none;
     }
 
 }
 
-/*----------Estilo de la section productos version2----------*/
 
 /*----------Estilo de la section grafico----------*/
 .grafica-inicio {
