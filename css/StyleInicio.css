@@ -410,6 +410,22 @@ h5{
 }
 
 @media (max-width: 767.98px) {
+
+    .titulo-productos {
+        font-size: 0.9rem;
+        margin-bottom: 5%;
+    }
+
+    .span-productos span {
+        font-size: 0.9rem;
+    }
+
+    .parrafo-productos{
+        font-size: 0.6rem;
+    }
+
+    .btn-productos{}
+
     .card-product{
         width: 76%;
         margin-top: 4%;
