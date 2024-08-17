@@ -76,9 +76,11 @@
         </nav>
     </header>
 
-
+<!-- Contenedor principal -->
+<div class="container">
     <div class="row" data-aos="fade-down" data-aos-delay="150">
-        <div class="col-12">
+        <!-- Contenedor para la tarjeta -->
+        <div class="col-md-6 mb-4 tarjeta">
             <div class="card-container mb-4">
                 <div class="front bg-light p-4">
                     <div class="image mb-3">
@@ -100,7 +102,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="back text-light p-1">
                     <div class="stripe mb-2"></div>
                     <div class="box">
@@ -111,11 +112,8 @@
                 </div>
             </div>
         </div>
-    </div>
 
-
-    <!-- Contenedor para el formulario -->
-    <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
+        <!-- Contenedor para el formulario -->
         <div class="col-md-6">
             <div class="form-container p-3"
                 style="background-color: #e7e7e7; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);">
@@ -127,26 +125,19 @@
                             <h5 class="text-center" style="color: #333; font-size: 1.2rem;">Payment</h5>
                         </div>
                         <div class="col-12 mb-2">
-                            <label for="accepted-cards" style="font-weight: 600; font-size: 0.8rem;">Accepted
-                                Cards</label>
+                            <label for="accepted-cards" style="font-weight: 600; font-size: 0.8rem;">Accepted Cards</label>
                             <div>
-                                <img src="./Images/Tarjeta/Mastercard-logo.1.png" alt="MasterCard"
-                                    style="height: 20px; margin-right: 5px;">
-                                <img src="./Images/Tarjeta/Visa-Logo-2.png" alt="Visa"
-                                    style="height: 20px; margin-right: 5px;">
+                                <img src="./Images/Tarjeta/Mastercard-logo.1.png" alt="MasterCard" style="height: 20px; margin-right: 5px;">
+                                <img src="./Images/Tarjeta/Visa-Logo-2.png" alt="Visa" style="height: 20px; margin-right: 5px;">
                             </div>
                         </div>
                         <div class="col-md-6 mb-2">
                             <label for="card-holder" style="font-weight: 600; font-size: 0.8rem;">Name On Card</label>
-                            <input type="text" class="form-control form-control-sm card-holder-input" id="card-holder"
-                                placeholder="Enter card holder's name">
-
+                            <input type="text" class="form-control form-control-sm card-holder-input" id="card-holder" placeholder="Enter card holder's name">
                         </div>
                         <div class="col-md-6 mb-2">
-                            <label for="card-number" style="font-weight: 600; font-size: 0.8rem;">Credit Card
-                                Number</label>
-                            <input type="text" maxlength="16" class="form-control form-control-sm card-number-input"
-                                id="card-number" placeholder="Card number">
+                            <label for="card-number" style="font-weight: 600; font-size: 0.8rem;">Credit Card Number</label>
+                            <input type="text" maxlength="16" class="form-control form-control-sm card-number-input" id="card-number" placeholder="Card number">
                         </div>
                         <div class="col-md-6 mb-2">
                             <label for="expiration-month" style="font-weight: 600; font-size: 0.8rem;">Exp Month</label>
@@ -183,11 +174,9 @@
                         </div>
                         <div class="col-md-6 mb-2">
                             <label for="cvv" style="font-weight: 600; font-size: 0.8rem;">CVV</label>
-                            <input type="text" maxlength="4" class="form-control form-control-sm cvv-input" id="cvv"
-                                placeholder="CVV" placeholder="Enter CVV">
+                            <input type="text" maxlength="4" class="form-control form-control-sm cvv-input" id="cvv" placeholder="Enter CVV">
                         </div>
                     </div>
-
 
                     <!-- Sección de Dirección de Facturación -->
                     <div class="row mb-3">
@@ -196,8 +185,7 @@
                         </div>
                         <div class="col-md-6 mb-2">
                             <label for="full-name" style="font-weight: 600; font-size: 0.8rem;">Full Name</label>
-                            <input type="text" class="form-control form-control-sm" id="full-name"
-                                placeholder="Full name">
+                            <input type="text" class="form-control form-control-sm" id="full-name" placeholder="Full name">
                         </div>
                         <div class="col-md-6 mb-2">
                             <label for="email" style="font-weight: 600; font-size: 0.8rem;">Email</label>
@@ -217,25 +205,25 @@
                         </div>
                         <div class="col-md-6 mb-2">
                             <label for="zip-code" style="font-weight: 600; font-size: 0.8rem;">Zip Code</label>
-                            <input type="text" class="form-control form-control-sm" id="zip-code"
-                                placeholder="Zip code">
+                            <input type="text" class="form-control form-control-sm" id="zip-code" placeholder="Zip code">
                         </div>
                         <div class="col-md-6 mb-2">
                             <label for="country" style="font-weight: 600; font-size: 0.8rem;">Country</label>
                             <input type="text" class="form-control form-control-sm" id="country" placeholder="Country">
                         </div>
                     </div>
+
                     <div class="text-center mt-2">
                         <button type="submit" class="btn btn-primary btn-sm"
                             style="background-color: #E96C12; border-color: #E96C12; border-radius: 5px; padding: 6px 12px; font-size: 12px; font-weight: 600;">
                             Proceed to Checkout
                         </button>
                     </div>
-
                 </form>
             </div>
         </div>
     </div>
+</div>
 
 
 

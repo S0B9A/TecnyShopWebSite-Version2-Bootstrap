@@ -103,11 +103,6 @@ header{
         margin-bottom: 20%;
     }
 
-    .card-container {
-       width: 80%;
-       min-height: 10px;
-    }
-
     .card-holder-name{
         font-weight: bold;
         font-size: 0.8rem !important; /* Cambia el tamaño de la fuente según sea necesario */
