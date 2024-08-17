@@ -100,7 +100,7 @@ header{
 @media (max-width: 767.98px) {
 
     header{
-        margin-bottom: 20%;
+        margin-top: 20%;
     }
 
     .card-holder-name{
@@ -122,5 +122,10 @@ header{
         font-weight: bold;
         font-size: 0.8rem !important; /* Cambia el tamaño de la fuente según sea necesario */
     }
+
+    .tarjeta{
+        margin-top: 10%;
+    }
     
 }
+

@@ -78,43 +78,10 @@
 
 <!-- Contenedor principal -->
 <div class="container">
-    <div class="row" data-aos="fade-down" data-aos-delay="150">
-        <!-- Contenedor para la tarjeta -->
-        <div class="col-md-6 mb-4 tarjeta">
-            <div class="card-container mb-4">
-                <div class="front bg-light p-4">
-                    <div class="image mb-3">
-                        <img src="./Images/Tarjeta/chip.png" alt="" class="mr-2 imagen-chip-Front">
-                        <img src="./Images/Tarjeta/visa.png" alt="" class="imagen-tipoDeTarjeta-Front">
-                    </div>
-                    <div class="card-number-box mb-4">################</div>
-                    <div class="d-flex justify-content-between">
-                        <div class="box">
-                            <span>card holder</span>
-                            <div class="card-holder-name">full name</div>
-                        </div>
-                        <div class="box">
-                            <span>expires</span>
-                            <div class="expiration">
-                                <span class="exp-month">mm</span>
-                                <span class="exp-year">yy</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="back text-light p-1">
-                    <div class="stripe mb-2"></div>
-                    <div class="box">
-                        <span class="cvv-box">cvv</span>
-                        <div></div>
-                        <img src="./Images/Tarjeta/visa.png" alt="" class="imagen-tipoDeTarjeta-Back">
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="row">
+      
         <!-- Contenedor para el formulario -->
-        <div class="col-md-6">
+        <div class="col-md-6 order-md-1" data-aos="fade-down" data-aos-delay="150">
             <div class="form-container p-3"
                 style="background-color: #e7e7e7; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);">
                 <form action="">
@@ -222,8 +189,43 @@
                 </form>
             </div>
         </div>
+
+        <!-- Contenedor para la tarjeta -->
+        <div class="col-md-6 order-md-2 mb-4 tarjeta" data-aos="fade-down" data-aos-delay="250">
+            <div class="card-container mb-4">
+                <div class="front bg-light p-4">
+                    <div class="image mb-3">
+                        <img src="./Images/Tarjeta/chip.png" alt="" class="mr-2 imagen-chip-Front">
+                        <img src="./Images/Tarjeta/visa.png" alt="" class="imagen-tipoDeTarjeta-Front">
+                    </div>
+                    <div class="card-number-box mb-4">################</div>
+                    <div class="d-flex justify-content-between">
+                        <div class="box">
+                            <span>card holder</span>
+                            <div class="card-holder-name">full name</div>
+                        </div>
+                        <div class="box">
+                            <span>expires</span>
+                            <div class="expiration">
+                                <span class="exp-month">mm</span>
+                                <span class="exp-year">yy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="back text-light p-1">
+                    <div class="stripe mb-2"></div>
+                    <div class="box">
+                        <span class="cvv-box">cvv</span>
+                        <div></div>
+                        <img src="./Images/Tarjeta/visa.png" alt="" class="imagen-tipoDeTarjeta-Back">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 
 
 
