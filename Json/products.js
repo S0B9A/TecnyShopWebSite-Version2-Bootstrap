@@ -10,7 +10,7 @@ const products=
         "Nombre": "Monitor Curvo",
         "Categoria":"Oficina",
         "Precio":150000,
-        "Galeria":["./Images/Productos/Oficina/Monitor Curvo 34 pulgadas.png","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Oficina/Monitor Curvo 34 pulgadas.png","./Images/Productos/Oficina/MonitorCurvo2.webp", "./Images/Productos/Oficina/MonitorCurvo3.webp"],
         "Stock":true,
         "Descripcion":"Monitor de 34 pulgadas",
         "Garantia":"1 anno"
@@ -20,7 +20,7 @@ const products=
         "Nombre": "Monitor de Escritorio 1C",
         "Categoria":"Oficina",
         "Precio":160000,
-        "Galeria":["./Images/Productos/Oficina/Monitor de escritorio 1C Xiaomi 23.8 pulgadas.jpg","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Oficina/Monitor de escritorio 1C Xiaomi 23.8 pulgadas.jpg","./Images/Productos/Oficina/Monitor 1C 2.webp","./Images/Productos/Oficina/Monitor 1C 3.webp"],
         "Stock":false,
         "Descripcion":"Monitor de 23.8 pulgadas",
         "Garantia":"1 anno"
@@ -30,7 +30,7 @@ const products=
         "Nombre": "Monitor Gaming 2K",
         "Categoria":"Oficina",
         "Precio":170000,
-        "Galeria":["./Images/Productos/Oficina/Monitor Gaming 2K 27 pulgadas.png","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Oficina/Monitor Gaming 2K 27 pulgadas.png","./Images/Productos/Oficina/monitor gaming 2k 2.jpg","./Images/Productos/Oficina/monitor gaming 2k 3.jpg"],
         "Stock":true,
         "Descripcion":"Monitor de 27 pulgadas",
         "Garantia":"1 anno"
@@ -40,7 +40,7 @@ const products=
         "Nombre": "Freidora de Aire",
         "Categoria":"Electrodomésticos",
         "Precio":70000,
-        "Galeria":["./Images/Productos/Electrodomésticos/FreidoraAire-6L-Photoroom.png","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Electrodomésticos/FreidoraAire-6L-Photoroom.png","./Images/Productos/Electrodomésticos/FreidoraAire2.webp","./Images/Productos/Electrodomésticos/FreidoraAire3.webp"],
         "Stock":false,
         "Descripcion":"6L",
         "Garantia":"1 anno"
@@ -50,7 +50,7 @@ const products=
         "Nombre": "Dispensador de Agua",
         "Categoria":"Electrodomésticos",
         "Precio":40000,
-        "Galeria":["./Images/Productos/Electrodomésticos/Dispensador de agua inteligente Xiaomi-Photoroom.png","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Electrodomésticos/Dispensador de agua inteligente Xiaomi-Photoroom.png","./Images/Productos/Electrodomésticos/dispensador1.webp","./Images/Productos/Electrodomésticos/dispensador2.webp"],
         "Stock":true,
         "Descripcion":"Inteligente",
         "Garantia":"1 anno"
@@ -60,7 +60,7 @@ const products=
         "Nombre": "Hervidor Mijia",
         "Categoria":"Electrodomésticos",
         "Precio":35000,
-        "Galeria":["./Images/Productos/Electrodomésticos/Hervidor Mijia PRO-Scene-Photoroom.png","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Electrodomésticos/Hervidor Mijia PRO-Scene-Photoroom.png","./Images/Productos/Electrodomésticos/hervidor1.webp","./Images/Productos/Electrodomésticos/hervidor2.webp"],
         "Stock":false,
         "Descripcion":"Mi Smart Pro",
         "Garantia":"1 anno"

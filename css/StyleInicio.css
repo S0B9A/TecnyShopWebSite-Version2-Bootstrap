@@ -341,7 +341,7 @@ hr {
 /*----------Estilo de la section productos version2----------*/
 
 .productos {
-    margin-top: 6%;
+    margin-top: 5%;
     margin-bottom: 1%;
 }
 
@@ -410,6 +410,10 @@ h5{
 }
 
 @media (max-width: 767.98px) {
+
+    .productos{
+        margin-top: 17%;
+    }
 
     .titulo-productos {
         font-size: 0.9rem;

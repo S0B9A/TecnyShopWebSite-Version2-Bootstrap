@@ -1,4 +1,8 @@
 
+ul {
+    list-style: none;
+}
+
 header {
     margin-bottom: 5%;
 }
