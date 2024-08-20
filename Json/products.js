@@ -70,7 +70,7 @@ const products=
         "Nombre": "Aspiradora de ácaros  y polvo",
         "Categoria":"Limpieza",
         "Precio":88000,
-        "Galeria":["./Images/Productos/Limpieza/Aspiradora de acaros y polvo-Photoroom.png","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Limpieza/Aspiradora de acaros y polvo-Photoroom.png","./Images/Productos/Limpieza/Aspiradora de ácaros  y polvo-2.jpg","./Images/Productos/Limpieza/Aspiradora de ácaros  y polvo-3.jpg"],
         "Stock":true,
         "Descripcion":"Nueva Edición",
         "Garantia":"1 anno"
@@ -80,7 +80,7 @@ const products=
         "Nombre": "Cepillo de dientes eléctrico",
         "Categoria":"Limpieza",
         "Precio":20000,
-        "Galeria":["./Images/Productos/Limpieza/Cepillo de dientes electrico T500-Photoroom.png","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Limpieza/Cepillo de dientes electrico T500-Photoroom.webp","./Images/Productos/Limpieza/Cepillo de dientes electrico T500-2.webp","./Images/Productos/Limpieza/Cepillo de dientes electrico T500-3.jpg"],
         "Stock":false,
         "Descripcion":"Edición T500",
         "Garantia":"1 anno"
@@ -90,7 +90,7 @@ const products=
         "Nombre": "Robot barredor y trapeador",
         "Categoria":"Limpieza",
         "Precio":115000,
-        "Galeria":["./Images/Productos/Limpieza/Robot barredor y trapeador T12.jpg","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Limpieza/Robot barredor y trapeador T12.jpg","./Images/Productos/Limpieza/Robot barredor y trapeador T12-2.webp","./Images/Productos/Limpieza/Robot barredor y trapeador T12-3.webp"],
         "Stock":true,
         "Descripcion":"Edición T12",
         "Garantia":"1 anno"
@@ -100,7 +100,7 @@ const products=
         "Nombre": "Aspiradora en seco y húmedo",
         "Categoria":"Limpieza",
         "Precio":90000,
-        "Galeria":["./Images/Productos/Limpieza/Aspiradora en seco y humedo W10-Photoroom.png","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Limpieza/Aspiradora en seco y humedo W10-Photoroom.png","./Images/Productos/Limpieza/Aspiradora en seco y humedo W10-2.webp","./Images/Productos/Limpieza/Aspiradora en seco y humedo W10-3.jpg"],
         "Stock":false,
         "Descripcion":"Edición W10",
         "Garantia":"1 anno"
@@ -110,7 +110,7 @@ const products=
         "Nombre": "Proyector Láser",
         "Categoria":"Oficina",
         "Precio":112000,
-        "Galeria":["./Images/Productos/Oficina/Proyector laser 150 -TV.png","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Oficina/Proyector laser 150 -TV.png","./Images/Productos/Oficina/Proyector laser 150 -TV-2.jpg","./Images/Productos/Oficina/Proyector laser 150 -TV-3.jpg"],
         "Stock":true,
         "Descripcion":"Edición 150 -TV",
         "Garantia":"1 anno"
@@ -120,7 +120,7 @@ const products=
         "Nombre": "Ratón Dual Mode",
         "Categoria":"Oficina",
         "Precio":37000,
-        "Galeria":["./Images/Productos/Oficina/Raton Dual Mode edicion silenciosa.png","./Images/Productos/image-not-found.jpg"],
+        "Galeria":["./Images/Productos/Oficina/Raton Dual Mode edicion silenciosa.png","./Images/Productos/Oficina/Raton Dual Mode edicion silenciosa.webp","./Images/Productos/Oficina/Raton Dual Mode edicion silenciosa-3.webp"],
         "Stock":true,
         "Descripcion":"Edición Silenciosa",
         "Garantia":"1 anno"
