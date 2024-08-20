@@ -97,6 +97,7 @@ function productosCarritoBarraLateral() {
     });
 
     $("#cartTotal").text(`$${total.toFixed(2)}`);
+    $("#carritoTotal").text(`$${total.toFixed(2)}`);
 
     $("#cartItems").off("click", ".eliminar").on("click", ".eliminar", function() {
         const id = $(this).data("id");
@@ -142,6 +143,7 @@ function ActualizarCantBarraLateral($input) {
     const nuevaCantidad = parseInt($input.val());
 
     actualizarCantidadEnLocalStorage(id, nuevaCantidad);
+    monstrarProductosDelCarrito();
     productosCarritoBarraLateral();
     ActualizarCantidadCarrito();
 }
