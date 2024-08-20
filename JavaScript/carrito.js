@@ -6,6 +6,14 @@ $(document).ready(function () {
     $('.fa-shopping-cart').on('click', function() {
         sidebarCart.show();
     });
+
+    $("#productos-list").on("change", ".input__elemento", function() {
+        ActualizarCantCarrito($(this));
+    });
+
+    $("#cartItems").on("change", ".cantidad", function() {
+        ActualizarCantBarraLateral($(this));
+    });
 });
 
 function monstrarProductosDelCarrito() {
@@ -104,6 +112,36 @@ function eliminarProductoDelCarrito(id) {
     localStorage.setItem("productos", JSON.stringify(productosAlmacenados));
 
     monstrarProductosDelCarrito();
+    productosCarritoBarraLateral();
+    ActualizarCantidadCarrito();
+}
+function actualizarCantidadEnLocalStorage(id, nuevaCantidad) {
+    let productosAlmacenados = JSON.parse(localStorage.getItem("productos")) || [];
+
+    if (nuevaCantidad <= 0) {
+        productosAlmacenados.splice(id, 1);
+    } else {
+        productosAlmacenados[id].cantidadDelProducto = nuevaCantidad;
+        productosAlmacenados[id].subtotal = productosAlmacenados[id].precio * nuevaCantidad;
+    }
+
+    localStorage.setItem("productos", JSON.stringify(productosAlmacenados));
+}
+function ActualizarCantCarrito($input) {
+    const id = $input.closest("tr").index(); 
+    const nuevaCantidad = parseInt($input.val());
+
+    actualizarCantidadEnLocalStorage(id, nuevaCantidad);
+    monstrarProductosDelCarrito();
+    productosCarritoBarraLateral();
+    ActualizarCantidadCarrito();
+}
+
+function ActualizarCantBarraLateral($input) {
+    const id = $input.data("id");
+    const nuevaCantidad = parseInt($input.val());
+
+    actualizarCantidadEnLocalStorage(id, nuevaCantidad);
     productosCarritoBarraLateral();
     ActualizarCantidadCarrito();
 }
