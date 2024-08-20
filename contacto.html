@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="icon" href="./Images/Iconos/Computadora.svg" type="image/png">
     <link rel="stylesheet" href="./css/StyleIndex.css">
     <link rel="stylesheet" href="./css/StyleContacto.css">
@@ -192,6 +193,15 @@
                 </div>
             </div>
         </section>
+
+        <section class="Mapa" data-aos="fade-down" data-aos-delay="250">
+            <div class="container d-flex flex-column align-items-center mt-4">
+                <h1>Nuestra Ubicación</h1>
+                <div id="map" style="height: 400px;"></div>
+            </div>
+            </div>
+        </section>
+
     </main>
 
 
@@ -307,6 +317,8 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./JavaScript/animacion.js"></script>
+    <script src="./JavaScript/mapa.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="./Json/products.js"></script>
     <script src="./JavaScript/ProductsList.js"></script>
     <script src="./JavaScript/LocalStorageCarrito.js"></script>

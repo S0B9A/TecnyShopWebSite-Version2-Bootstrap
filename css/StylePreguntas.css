@@ -11,11 +11,6 @@ header {
     margin-bottom: 4%;
 }
 
-.titulo-mapa {
-    margin-top: 8%;
-    margin-bottom: 3%;
-}
-
 @media (max-width: 767.98px) {
     .titulo-preguntas {
         margin-bottom: 5%;
@@ -23,13 +18,4 @@ header {
         font-size: 1.5rem;
     }
 
-    .titulo-mapa {
-        font-size: 1.5rem;
-        margin-bottom: 8%;
-    }
-
-    .ubicacion-mapa{
-        width: 80%;
-        height: 250px;
-    }
 }
