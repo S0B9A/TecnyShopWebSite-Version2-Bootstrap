@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-white-custom fixed-top">
             <div class="container">
-                <a href="index.html" class="navbar-brand">
+                <a href="#" class="navbar-brand">
                     <img src="Images/Logo TecnyShop.png" alt="Logo TecnyShop" class="logo-img d-none d-lg-inline-block">
                     <span class="text-orange">Grupo</span>
                     <span class="text-custom-gris">Unfried</span>
@@ -82,69 +82,66 @@
     </header>
 
     <main>
+    <div class="container carrito-productos mt-4">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody" id="productos-list" data-aos="fade-down" data-aos-delay="150">
+                    <!-- Productos listados aquí -->
+                </tbody>
+            </table>
+        </div>
 
-        <div class="container carrito-productos mt-4">
+        <div class="d-flex justify-content-end">
             <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Producto</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Precio</th>
-                            <th scope="col">Subtotal</th>
-                            <th scope="col">Cantidad</th>
-                        </tr>
-                    </thead>
-                    <tbody class="tbody" id="productos-list" data-aos="fade-down" data-aos-delay="150">
-                        <!--
-                        <tr class="item-producto">
-                            <th scope="row" data-label="#">${index + 1}</th>
-                            <td class="table__productos" data-label="Producto">
-                                <img src="${producto.primeraImagen}" alt="" class="img-fluid">
-                            </td>
-                            <td class="table__price col-producto" data-label="Precio">
-                                <p>${producto.nombre}</p>
-                            </td>
-                            <td class="table__price col-producto" data-label="Precio">
-                                <p>$ ${producto.precio}</p>
-                            </td>
-                            <td class="table__subtotal col-producto" data-label="Subtotal">
-                                <p>$ ${producto.subtotal}</p>
-                            </td>
-                            <td class="table__cantidad" data-label="Cantidad">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <input type="number" min="1" value="${producto.cantidadDelProducto}" class="input__elemento form-control custom-input">
-                                    <button class="eliminar btn btn-danger ms-2" data-id="${index}">
-                                        <i class="bi bi-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        -->
-                    </tbody>
-                </table>
-            </div>
-        
-            <div class="row mx-4 mt-3" data-aos="fade-down" data-aos-delay="250">
-                <div class="col">
-                    <div class="row">
-                        <div class="col">
-                            <h3><strong>Total:</strong></h3>
-                        </div>
-                        <div class="col">
-                            <h3><span id="carritoTotal">$0.00</span></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex justify-content-end">
-                    <a href="procesoDePago.html" id="BTNcomprar" class="btn btn-success">COMPRAR</a>
+                <div class="table-container">
+                    <table class="table table-bordered table-sm">
+                        <tbody>
+                            <tr>
+                                <td><strong>Subtotal:</strong></td>
+                                <td id="cartsubtotal">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Método de envío:</strong></td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input" type="radio" name="shippingMethod" id="pickup" value="pickup"checked>
+                                            <label class="form-check-label" for="pickup">Recogida en tienda</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="shippingMethod" id="postal" value="postal">
+                                            <label class="form-check-label" for="postal">Envío postal (+5000 colones)</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total:</strong></td>
+                                <td id="cartTotal">$0.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
         
+        <div class="mt-4 d-flex justify-content-end">
+            <a href="procesoDePago.html" id="BTNcomprar" class="btn btn-success">PAGAR</a>
+        </div>
+        
+    </div>
+</main>
 
-    </main>
 
     <footer class="text-dark pt-5 pb-4">
 
@@ -172,28 +169,28 @@
                     <h5 class="text-uppercase ,b-4 font-weight-bold text-white">Contacto</h5>
                     <hr class="mb-4">
                     <p>
-                        <a href="contacto.html" class="text-white">Contáctenos</a>
+                        <a href="contacto.html#Contáctenos" class="text-white">Contáctenos</a>
                     </p>
                     <p>
-                        <a href="PreguntasFrecuentes.html" class="text-white">Preguntas frecuentes</a>
+                        <a href="contacto.html#preguntas" class="text-white">Preguntas frecuentes</a>
                     </p>
                     <p>
-                        <a href="contacto.html#map" class="text-white">Mapa</a>
+                        <a href="index.html#Mapa" class="text-white">Mapa</a>
                     </p>
                 </div>
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
 
-                    <h5 class="text-uppercase ,b-4 font-weight-bold text-white">Productos</h5>
+                    <h5 class="text-uppercase ,b-4 font-weight-bold text-white">Blog</h5>
                     <hr class="mb-4">
                     <p>
-                        <a href="productos.html" class="text-white">Nuestros Productos</a>
+                        <a href="blog.html#pr-blog" class="text-white">Productos más vendidos</a>
                     </p>
                     <p>
-                        <a href="index.html#productos" class="text-white">Mejores Productos </a>
+                        <a href="blog.html#ar-blog" class="text-white">Articulos recomendados</a>
                     </p>
                     <p>
-                        <a href="carrito.html" class="text-white">Carrito</a>
+                        <a href="blog.html#arInt-blog" class="text-white">Más articulos interesantes</a>
                     </p>
                 </div>
 
@@ -203,13 +200,13 @@
                     <hr class="mb-4">
                     <ul class="list-unstyled list-inline">
                         <li class="list-inline-item">
-                            <a href="https://www.facebook.com/sebas.ariasvargas.1/?locale=es_ES"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://wa.me/87133971"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.instagram.com/sba0_09?igsh=MXYwYnhzcmU4MTg4Zg=="><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -234,15 +231,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
+                        <h6><strong>Subtotal:</strong></h6>
+                    </div>
+                    <div class="col-6 text-end">
+                        <h6><span id="carritosubtotal">$0.00</span></h6>
+                    </div>
+                    <div class="col-6">
                         <h6><strong>Total:</strong></h6>
                     </div>
                     <div class="col-6 text-end">
-                        <h6><span id="cartTotal">$0.00</span></h6>
+                        <h6><span id="carritoTotal">$0.00</span></h6>
                     </div>
                 </div>
                 <div class="d-flex mt-3">
                     <a href="carrito.html" class="btn btn-secondary me-2 flex-fill">Ver Carrito</a>
-                    <a href="procesoDePago.html" class="carbtn btn btn-secondary flex-fill">Pagar</a>
                 </div>
             </div>
         </div>

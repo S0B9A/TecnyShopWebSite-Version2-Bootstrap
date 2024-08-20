@@ -14,6 +14,11 @@ $(document).ready(function () {
     $("#cartItems").on("change", ".cantidad", function() {
         ActualizarCantBarraLateral($(this));
     });
+
+    // Escuchar cambios en el método de envío
+    $("input[name='shippingMethod']").on("change", function() {
+        productosCarritoBarraLateral();
+    });
 });
 
 function monstrarProductosDelCarrito() {
@@ -93,10 +98,17 @@ function productosCarritoBarraLateral() {
 
         $("#cartItems").append(productoItem);
 
-        total += producto.precio * producto.cantidadDelProducto;
+        subtotal += producto.precio * producto.cantidadDelProducto;
     });
 
+    // Calcular el total incluyendo el costo de envío si aplica
+    let metodoEnvioCosto = $("input[name='shippingMethod']:checked").val() === "postal" ? 5000 : 0;
+    total = subtotal + metodoEnvioCosto;
+
+    $("#cartsubtotal").text(`$${subtotal.toFixed(2)}`);
     $("#cartTotal").text(`$${total.toFixed(2)}`);
+
+    $("#carritosubtotal").text(`$${subtotal.toFixed(2)}`);
     $("#carritoTotal").text(`$${total.toFixed(2)}`);
 
     $("#cartItems").off("click", ".eliminar").on("click", ".eliminar", function() {
@@ -116,6 +128,7 @@ function eliminarProductoDelCarrito(id) {
     productosCarritoBarraLateral();
     ActualizarCantidadCarrito();
 }
+
 function actualizarCantidadEnLocalStorage(id, nuevaCantidad) {
     let productosAlmacenados = JSON.parse(localStorage.getItem("productos")) || [];
 
@@ -128,6 +141,7 @@ function actualizarCantidadEnLocalStorage(id, nuevaCantidad) {
 
     localStorage.setItem("productos", JSON.stringify(productosAlmacenados));
 }
+
 function ActualizarCantCarrito($input) {
     const id = $input.closest("tr").index(); 
     const nuevaCantidad = parseInt($input.val());
