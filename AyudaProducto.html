@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecny Shop Productos</title>
+    <title>Tecny Shop Acerca De</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
@@ -16,11 +16,10 @@
         rel="stylesheet">
     <link rel="icon" href="./Images/Iconos/Computadora.svg" type="image/png">
     <link rel="stylesheet" href="./css/StyleIndex.css">
-    <link rel="stylesheet" href="./css/StyleProductos.css">
+    <link rel="stylesheet" href="./css/StyleAyudaPr.css">
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-white-custom fixed-top">
             <div class="container">
@@ -74,36 +73,74 @@
                 </div>
             </div>
         </nav>
-    </header>
 
-    <main class="container-fluid">
-        <div class="mb-3">
-            <select id="filter" class="form-select">
-                <option value="all">Todos</option>
-
-            </select>
+        <div class="banner container-fluid text-center">
+            <h1>Acerca de los diseñadores de la página Tecnyshop Grupo Unfriend</h1>
+            <hr>
         </div>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="products-list">
 
-            <div class="col-md-3">
-                <div class="card">
-                    <img class="card-image-top p-3" src="./Images/Productos/image-not-found.jpg">
-                    <div class="card-body p-1 mb-4">
-                        <h4 class="card-tittle text-center">Nombre producto</h4>
-                        <hr>
-                        <p class="card-text text-center">Caracteristicas</p>
-                        <h4 class="text-center">Precio</h4>
-                        <div class="btn">
-                            <button type="button ">Comprar</button>
+    </header>
+    <main>
+        <section id="politica-cambios-devoluciones" class="politica-cambios-devoluciones py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">Política de Cambios y Devoluciones</h2>
+                <hr class="mx-auto mb-4">
+                <p class="text-muted mb-5">En Tecny Shop, nos esforzamos por ofrecer productos de alta calidad y una excelente experiencia de compra. Si necesitas cambiar o devolver un producto, por favor sigue nuestra política a continuación:</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="mb-4">Condiciones para Cambios</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle text-orange"></i> El producto debe estar en su estado original, sin usar y con las etiquetas intactas.</li>
+                            <li><i class="bi bi-check-circle text-orange"></i> La solicitud de cambio debe realizarse dentro de los 15 días posteriores a la recepción del producto.</li>
+                            <li><i class="bi bi-check-circle text-orange"></i> El recibo de compra o prueba de compra es necesario para procesar el cambio.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="mb-4">Condiciones para Devoluciones</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle text-orange"></i> El producto debe ser devuelto en su empaque original y en condiciones nuevas.</li>
+                            <li><i class="bi bi-check-circle text-orange"></i> Las devoluciones se aceptan dentro de los 30 días posteriores a la recepción del producto.</li>
+                            <li><i class="bi bi-check-circle text-orange"></i> Los productos en oferta o con descuentos especiales no son elegibles para devolución.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="contacto-ayuda" class="contacto-ayuda py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card border border-orange shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title text-center mb-4">Información de Contacto</h3>
+                                <p class="card-text">Si tienes alguna pregunta o necesitas asistencia adicional, por favor contáctanos a través de los siguientes canales:</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-telephone text-orange"></i> Teléfono: +506 8790 5435</li>
+                                    <li><i class="bi bi-envelope text-orange"></i> Correo electrónico: <a href="mailto:soporte@tecnyshop.com">soporte@tecnyshop.com</a></li>
+                                    <li><i class="bi bi-geo-alt text-orange"></i> Dirección: Costado noroeste de la plaza de deportes, Turrucares, Alajuela</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card border border-orange shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title text-center mb-4">Sección de Ayuda</h3>
+                                <p class="card-text">Para ayudarte a resolver cualquier problema o inquietud, consulta nuestra sección de ayuda:</p>
+                                <ul class="list-unstyled">
+                                    <li><a href="PreguntasFrecuentes.html" class="text-dark"><i class="bi bi-question-circle text-orange"></i> Preguntas Frecuentes</a></li>
+                                    <li><a href="contacto.html" class="text-dark"><i class="bi bi-chat-dots text-orange"></i> Contacto</a></li>
+                                    <li><a href="index.html#servicios" class="text-dark"><i class="bi bi-info-circle text-orange"></i> Más Información</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-
+        </section>
     </main>
+    
 
     <footer class="text-dark pt-5 pb-4">
 
@@ -173,9 +210,7 @@
                     </ul>
                 </div>
             </div>
-
         </div>
-
     </footer>
 
     <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="sidebarCart" aria-labelledby="sidebarCartLabel">
@@ -209,14 +244,11 @@
         </div>
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
-
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./JavaScript/animacion.js"></script>
     <script src="./Json/products.js"></script>

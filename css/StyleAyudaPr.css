@@ -1,0 +1,32 @@
+.politica-cambios-devoluciones {
+    background-color: #f8f9fa;
+}
+
+.politica-cambios-devoluciones h2 {
+    color: #E96C12; /* Color naranja */
+}
+
+.politica-cambios-devoluciones ul li {
+    margin-bottom: 10px;
+}
+
+.contacto-ayuda {
+    background-color: #e9ecef;
+}
+
+.contacto-ayuda h3 {
+    color: #E96C12; /* Color naranja */
+}
+
+.contacto-ayuda ul li {
+    margin-bottom: 10px;
+}
+
+.contacto-ayuda ul li a {
+    text-decoration: none;
+    color: #343a40; /* Color oscuro para los enlaces */
+}
+
+.contacto-ayuda ul li a:hover {
+    text-decoration: underline;
+}

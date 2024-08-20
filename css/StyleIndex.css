@@ -1,4 +1,6 @@
-
+*{
+    scroll-behavior: smooth;
+}
 /* Fuente principal */
 body {
     font-family: "Montserrat", sans-serif;

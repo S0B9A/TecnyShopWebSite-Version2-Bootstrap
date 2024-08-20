@@ -18,26 +18,27 @@ function monstrarProductosDelCarrito() {
 
         const productoItem =
             `<th scope="row" data-label="#">${index + 1}</th>
-            <td class="table__productos" data-label="Producto">
-                <img src="${producto.primeraImagen}" alt="" class="img-fluid">
-            </td>
-            <td class="table__price col-producto" data-label="Precio">
-                <p>${producto.nombre}</p>
-            </td>
-            <td class="table__price col-producto" data-label="Precio">
-                <p>$ ${producto.precio}</p>
-            </td>
-            <td class="table__subtotal col-producto" data-label="Subtotal">
-                <p>$ ${producto.subtotal}</p>
-            </td>
-            <td class="table__cantidad" data-label="Cantidad">
-                <div class="d-flex align-items-center justify-content-between">
-                    <input type="number" min="1" value="${producto.cantidadDelProducto}" class="input__elemento form-control custom-input">
-                    <button class="eliminar btn btn-danger ms-2" data-id="${index}">
-                        <i class="bi bi-trash"></i>
-                    </button>
-                </div>
-            </td>`;
+                            <td class="table__productos" data-label="Producto">
+                                <img src="${producto.primeraImagen}" alt="" class="img-fluid">
+                            </td>
+                            <td class="table__price col-producto" data-label="Precio">
+                                <p>${producto.nombre}</p>
+                            </td>
+                            <td class="table__price col-producto" data-label="Precio">
+                                <p>$ ${producto.precio}</p>
+                            </td>
+                            <td class="table__subtotal col-producto" data-label="Subtotal">
+                                <p>$ ${producto.subtotal}</p>
+                            </td>
+                            <td class="table__cantidad" data-label="Cantidad">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <input type="number" min="1" value="${producto.cantidadDelProducto}" class="input__elemento form-control custom-input">
+                                    <button class="eliminar btn btn-danger ms-2" data-id="${index}">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+            `;
 
         colProducto.innerHTML = productoItem;
         $("#productos-list").append(colProducto);
@@ -84,12 +85,10 @@ function productosCarritoBarraLateral() {
 
         $("#cartItems").append(productoItem);
 
-        subtotal += producto.subtotal * producto.cantidadDelProducto;
         total += producto.precio * producto.cantidadDelProducto;
     });
 
-    $("#cartSubtotal").text(`$${subtotal.toFixed(2)}`);
-    /*$("#cartTotal").text(`$${total.toFixed(2)}`);*/
+    $("#cartTotal").text(`$${total.toFixed(2)}`);
 
     $("#cartItems").off("click", ".eliminar").on("click", ".eliminar", function() {
         const id = $(this).data("id");

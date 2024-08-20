@@ -1,6 +1,9 @@
 header {
     margin-bottom: 10%;
 }
+.filter-black {
+    filter: invert(1) grayscale(100%) brightness(0%);
+}
 
 #productQuantity {
     width: 40%;
@@ -43,3 +46,5 @@ header {
         margin-top: 100px;
     }
 }
+
+

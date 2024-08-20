@@ -14,18 +14,17 @@ header{
 .btn{
     width: 100%;
 }
-.btn button{
-    height: 40px;
-    width: 70%;
+#BTNcomprar {
+    height: 50px;
     border: 2px solid #E96C12;
     background-color: #E96C12;
     color: #fff;
     border-radius: 5px;
     transition: all 200ms ease;
     cursor: pointer;
-    white-space: nowrap
 }
-.btn button:hover{
+
+#BTNcomprar:hover {
     border: 2px solid #E96C12;
     background-color: #fff;
     color: #000000;

@@ -90,7 +90,23 @@ h3 {
     font-size: 1.2rem;
     text-decoration: solid;
 }
+#BTNcomprar {
+    height: 40px;
+    width: 150px;
+    border: 2px solid #E96C12;
+    background-color: #E96C12;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
 
+#BTNcomprar:hover {
+    border: 2px solid #E96C12;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 5px;
+}
 /* Estilos para pantallas pequeñas */
 @media (max-width: 767.98px) {
     .col-producto {
@@ -98,27 +114,29 @@ h3 {
         text-decoration: solid;
         padding-left: 30px;
     }
+    #BTNcomprar {
+        height: 38px;
+        font-size: 0.8rem;
+        width: 100px;
+    }
 
     .custom-input {
+        width: 40px;
         font-size: 0.8rem;
-       width: 100%;
-       display: flex;
-       align-items: center;
-       justify-content: center;
+        width: 100%;
     }
 
-    .eliminar{
-       width: 39%; 
-       display: flex;
-       align-items: center;
-       justify-content: center;
+    .eliminar {
+        width: 40px;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .itemCartTotal {
+        font-size: 1rem;
     }
 }
-
-
-/* CSS Personalizado */
 .custom-input {
-    background-color: #536B83; /* Color de fondo del input */
-    color: #ffffff; /* Color del texto */
+    width: 60px;
     text-decoration: solid;
 }
