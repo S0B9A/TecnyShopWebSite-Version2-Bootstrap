@@ -129,3 +129,6 @@ header{
     
 }
 
+#loading-overlay {
+    z-index: 1050;
+}

@@ -76,58 +76,54 @@
         </nav>
     </header>
 
-<!-- Contenedor principal -->
 <div class="container">
     <div class="row">
       
-        <!-- Contenedor para el formulario -->
         <div class="col-md-6 order-md-1" data-aos="fade-down" data-aos-delay="150">
             <div class="form-container p-3"
                 style="background-color: #e7e7e7; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);">
                 <form action="">
-
-                    <!-- Sección de Detalles de Pago -->
                     <div class="row mb-3">
                         <div class="col-12">
-                            <h5 class="text-center" style="color: #333; font-size: 1.2rem;">Payment</h5>
+                            <h5 class="text-center" style="color: #333; font-size: 1.2rem;">Pago</h5>
                         </div>
                         <div class="col-12 mb-2">
-                            <label for="accepted-cards" style="font-weight: 600; font-size: 0.8rem;">Accepted Cards</label>
+                            <label for="accepted-cards" style="font-weight: 600; font-size: 0.8rem;">Tarjetas Aceptadas</label>
                             <div>
                                 <img src="./Images/Tarjeta/Mastercard-logo.1.png" alt="MasterCard" style="height: 20px; margin-right: 5px;">
                                 <img src="./Images/Tarjeta/Visa-Logo-2.png" alt="Visa" style="height: 20px; margin-right: 5px;">
                             </div>
                         </div>
                         <div class="col-md-6 mb-2">
-                            <label for="card-holder" style="font-weight: 600; font-size: 0.8rem;">Name On Card</label>
-                            <input type="text" class="form-control form-control-sm card-holder-input" id="card-holder" placeholder="Enter card holder's name">
+                            <label for="card-holder" style="font-weight: 600; font-size: 0.8rem;">Nombre en la Tarjeta</label>
+                            <input type="text" class="form-control form-control-sm card-holder-input" id="card-holder" placeholder="Ingresa el nombre del titular">
                         </div>
                         <div class="col-md-6 mb-2">
-                            <label for="card-number" style="font-weight: 600; font-size: 0.8rem;">Credit Card Number</label>
-                            <input type="text" maxlength="16" class="form-control form-control-sm card-number-input" id="card-number" placeholder="Card number">
+                            <label for="card-number" style="font-weight: 600; font-size: 0.8rem;">Número de Tarjeta</label>
+                            <input type="text" maxlength="16" class="form-control form-control-sm card-number-input" id="card-number" placeholder="Número de tarjeta">
                         </div>
                         <div class="col-md-6 mb-2">
-                            <label for="expiration-month" style="font-weight: 600; font-size: 0.8rem;">Exp Month</label>
+                            <label for="expiration-month" style="font-weight: 600; font-size: 0.8rem;">Mes de Expiración</label>
                             <select id="expiration-month" class="form-control form-control-sm month-input">
-                                <option value="month" selected disabled>Month</option>
-                                <option value="01">01 - January</option>
-                                <option value="02">02 - February</option>
-                                <option value="03">03 - March</option>
-                                <option value="04">04 - April</option>
-                                <option value="05">05 - May</option>
-                                <option value="06">06 - June</option>
-                                <option value="07">07 - July</option>
-                                <option value="08">08 - August</option>
-                                <option value="09">09 - September</option>
-                                <option value="10">10 - October</option>
-                                <option value="11">11 - November</option>
-                                <option value="12">12 - December</option>
+                                <option value="month" selected disabled>Mes</option>
+                                <option value="01">01 - Enero</option>
+                                <option value="02">02 - Febrero</option>
+                                <option value="03">03 - Marzo</option>
+                                <option value="04">04 - Abril</option>
+                                <option value="05">05 - Mayo</option>
+                                <option value="06">06 - Junio</option>
+                                <option value="07">07 - Julio</option>
+                                <option value="08">08 - Agosto</option>
+                                <option value="09">09 - Septiembre</option>
+                                <option value="10">10 - Octubre</option>
+                                <option value="11">11 - Noviembre</option>
+                                <option value="12">12 - Diciembre</option>
                             </select>
                         </div>
                         <div class="col-md-6 mb-2">
-                            <label for="expiration-year" style="font-weight: 600; font-size: 0.8rem;">Exp Year</label>
+                            <label for="expiration-year" style="font-weight: 600; font-size: 0.8rem;">Año de Expiración</label>
                             <select id="expiration-year" class="form-control form-control-sm year-input">
-                                <option value="year" selected disabled>Year</option>
+                                <option value="year" selected disabled>Año</option>
                                 <option value="2024">2024</option>
                                 <option value="2025">2025</option>
                                 <option value="2026">2026</option>
@@ -141,56 +137,26 @@
                         </div>
                         <div class="col-md-6 mb-2">
                             <label for="cvv" style="font-weight: 600; font-size: 0.8rem;">CVV</label>
-                            <input type="text" maxlength="4" class="form-control form-control-sm cvv-input" id="cvv" placeholder="Enter CVV">
+                            <input type="text" maxlength="4" class="form-control form-control-sm cvv-input" id="cvv" placeholder="Ingresa el CVV">
                         </div>
                     </div>
-
-                    <!-- Sección de Dirección de Facturación -->
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <h5 class="text-center" style="color: #333; font-size: 1.2rem;">Billing Address</h5>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <label for="full-name" style="font-weight: 600; font-size: 0.8rem;">Full Name</label>
-                            <input type="text" class="form-control form-control-sm" id="full-name" placeholder="Full name">
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <label for="email" style="font-weight: 600; font-size: 0.8rem;">Email</label>
-                            <input type="email" class="form-control form-control-sm" id="email" placeholder="Email">
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <label for="address" style="font-weight: 600; font-size: 0.8rem;">Address</label>
-                            <input type="text" class="form-control form-control-sm" id="address" placeholder="Address">
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <label for="city" style="font-weight: 600; font-size: 0.8rem;">City</label>
-                            <input type="text" class="form-control form-control-sm" id="city" placeholder="City">
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <label for="state" style="font-weight: 600; font-size: 0.8rem;">State</label>
-                            <input type="text" class="form-control form-control-sm" id="state" placeholder="State">
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <label for="zip-code" style="font-weight: 600; font-size: 0.8rem;">Zip Code</label>
-                            <input type="text" class="form-control form-control-sm" id="zip-code" placeholder="Zip code">
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <label for="country" style="font-weight: 600; font-size: 0.8rem;">Country</label>
-                            <input type="text" class="form-control form-control-sm" id="country" placeholder="Country">
-                        </div>
+        
+                    <div class="row mb-3" id="Facturación">
+                        <!-- Añade aquí campos de facturación adicionales si es necesario -->
                     </div>
-
+        
                     <div class="text-center mt-2">
-                        <button type="submit" class="btn btn-primary btn-sm"
+                        <button id="finalize-button" type="submit" class="btn btn-primary btn-sm"
                             style="background-color: #E96C12; border-color: #E96C12; border-radius: 5px; padding: 6px 12px; font-size: 12px; font-weight: 600;">
-                            Proceed to Checkout
+                            Finalizar compra
                         </button>
                     </div>
+                    
                 </form>
             </div>
         </div>
+        
 
-        <!-- Contenedor para la tarjeta -->
         <div class="col-md-6 order-md-2 mb-4 tarjeta" data-aos="fade-down" data-aos-delay="250">
             <div class="card-container mb-4">
                 <div class="front bg-light p-4">
@@ -335,6 +301,15 @@
         </div>
     </div>
 
+    <div id="loading-overlay" class="d-none position-fixed top-0 start-0 w-100 h-100 bg-light d-flex justify-content-center align-items-center">
+        <div class="spinner-border text-orange" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+        <div id="success-message" class="d-none text-center mt-3">
+            <h3>Pago realizado con éxito</h3>
+        </div>
+    </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -352,6 +327,7 @@
     <script src="./JavaScript/ProductsList.js"></script>
     <script src="./JavaScript/LocalStorageCarrito.js"></script>
     <script src="./JavaScript/carrito.js"></script>
+    <script src="./JavaScript/VerificacionEnvio.js"></script>
 </body>
 
 </html>
