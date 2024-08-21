@@ -1,6 +1,19 @@
 $(document).ready(function () {
     monstrarProductosDelCarrito();
     productosCarritoBarraLateral(); 
+
+    const productosEnCarrito = localStorage.getItem('productos');
+    
+    // Referencia al botón de PAGAR
+    const botonPagar = $('#BTNcomprar');
+    
+    // Deshabilitar el botón si no hay productos
+    if (!productosEnCarrito || JSON.parse(productosEnCarrito).length === 0) {
+        botonPagar.addClass('disabled');
+    } else {
+        botonPagar.removeClass('disabled');
+    }
+    
     var sidebarCart = new bootstrap.Offcanvas($('#sidebarCart')[0]);
 
     $('.fa-shopping-cart').on('click', function() {
