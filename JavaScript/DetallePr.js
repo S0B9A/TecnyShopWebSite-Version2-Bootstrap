@@ -20,12 +20,27 @@ $(document).ready(function () {
                 carouselInner.append(carouselItem);
             });
 
-            const stockText = product.Stock ? "Disponible online" : "Disponible en tienda física";
+            const stockText = product.Stock ? "Stock: Disponible online" : "Stock: Disponible en tienda física";
             $("#productStock").text(stockText);
 
             $("#productPrice").text(`₡${product.Precio}`);
 
             $("#productDescription").text(product.Descripcion);
+
+            $('#productQuantity').on('change', function() {
+                let value = parseInt($(this).val());
+                if (isNaN(value) || value < 1) {
+                    $(this).val(1);
+                } else if (value > 9) {
+                    $(this).val(9);
+                }
+            });
+        
+            $('#productQuantity').on('input', function(e) {
+                let inputVal = $(this).val();
+                
+                $(this).val(inputVal.replace(/\D/g, ''));
+            });
 
         } else {
             console.error("Producto no encontrado.");

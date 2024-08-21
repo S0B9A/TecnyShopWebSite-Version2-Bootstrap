@@ -17,13 +17,14 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         isValid = false;
     }
 
-    // Validación del Teléfono
+
     const telefono = document.getElementById('telefono').value;
-    const telefonoPattern = /^\+506\d{8}$/;
+    const telefonoPattern = /^\d{8}$/; 
     if (!telefonoPattern.test(telefono)) {
-        showError('El teléfono debe tener el formato +506 seguido de 8 dígitos. ejemplo "+506########"');
+        showError('El teléfono debe tener 8 dígitos. ejemplo "########"');
         isValid = false;
     }
+
 
     // Validación de la Fecha de Nacimiento
     const fechaNacimiento = document.getElementById('fechaNacimiento').value;
@@ -75,3 +76,4 @@ function showError(message) {
         alert.classList.add('hide');
     }, 3000);
 }
+

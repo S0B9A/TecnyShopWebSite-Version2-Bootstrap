@@ -1,18 +1,6 @@
 $(document).ready(function () {
     monstrarProductosDelCarrito();
     productosCarritoBarraLateral(); 
-
-    const productosEnCarrito = localStorage.getItem('productos');
-    
-    // Referencia al botón de PAGAR
-    const botonPagar = $('#BTNcomprar');
-    
-    // Deshabilitar el botón si no hay productos
-    if (!productosEnCarrito || JSON.parse(productosEnCarrito).length === 0) {
-        botonPagar.addClass('disabled');
-    } else {
-        botonPagar.removeClass('disabled');
-    }
     
     var sidebarCart = new bootstrap.Offcanvas($('#sidebarCart')[0]);
 
@@ -31,6 +19,22 @@ $(document).ready(function () {
     // Escuchar cambios en el método de envío
     $("input[name='shippingMethod']").on("change", function() {
         productosCarritoBarraLateral();
+    });
+
+    $('#cantidadCarrito').on('change', function() {
+        let value = parseInt($(this).val());
+        if (isNaN(value) || value < 1) {
+            $(this).val(1);
+        } else if (value > 9) {
+            $(this).val(9);
+        }
+    });
+
+    // Prevenir la entrada de caracteres no numéricos
+    $('#cantidadCarrito').on('input', function(e) {
+        let inputVal = $(this).val();
+        // Remover cualquier caracter no numérico
+        $(this).val(inputVal.replace(/\D/g, ''));
     });
 });
 
@@ -58,7 +62,7 @@ function monstrarProductosDelCarrito() {
                             </td>
                             <td class="table__cantidad" data-label="Cantidad">
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <input type="number" min="1" value="${producto.cantidadDelProducto}" class="input__elemento form-control custom-input">
+                                    <input id="cantidad" type="number" min="1" value="${producto.cantidadDelProducto}" class="input__elemento form-control custom-input">
                                     <button class="eliminar btn btn-danger ms-2" data-id="${index}">
                                         <i class="bi bi-trash"></i>
                                     </button>
@@ -97,7 +101,7 @@ function productosCarritoBarraLateral() {
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="d-flex align-items-center">
                             <div class="input-group input-group-sm" style="width: 80px;">
-                                <input type="number" min="1" max="5" value="${producto.cantidadDelProducto}" class="form-control form-control-sm cantidad" data-id="${index}">
+                                <input id="cantidadCarrito" type="number" min="1" max="5" value="${producto.cantidadDelProducto}" class="form-control form-control-sm cantidad" data-id="${index}">
                             </div>
                             <button class="eliminar btn btn-danger btn-sm border-0 ms-2" style="width: 30px;" data-id="${index}">
                                 <i class="bi bi-trash text-white"></i>
